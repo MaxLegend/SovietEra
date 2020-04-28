@@ -1,0 +1,10 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:beton_block", "y": 0},
+        "facing=west":  { "model": "soviet:beton_block", "y": 180},
+        "facing=south": { "model": "soviet:beton_block", "y": 90 },
+        "facing=north": { "model": "soviet:beton_block", "y": 270 }
+    }
+}
+

@@ -1,0 +1,10 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:pipes", "y": 90},
+        "facing=west":  { "model": "soviet:pipes", "y": 270},
+        "facing=south": { "model": "soviet:pipes", "y": 180 },
+        "facing=north": { "model": "soviet:pipes", "y": 0 }
+    }
+}
+

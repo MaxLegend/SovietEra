@@ -1,0 +1,24 @@
+{
+	"parent": "block/cube_all",
+	"__comment": "Designed by Pavel Durov with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "blocks/redstone_block",
+		"texture": "blocks/redstone_block",
+		"texture1": "blocks/redstone_block"
+	},
+	"elements": [
+		{
+			"__comment": "Center",
+			"from": [ 6, 6, 6 ],
+			"to": [ 10, 10, 10 ],
+			"faces": {
+				"down": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture", "rotation": 90 },
+				"up": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture", "rotation": 270 },
+				"north": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture" },
+				"south": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture" },
+				"west": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture" },
+				"east": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture" }
+			}
+		}
+	]
+}

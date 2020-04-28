@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=down_z_north": { "model": "soviet:window_corner", "x": 180 },
+	"facing=down_z_south": { "model": "soviet:window_corner", "x": 180, "y": 180 },
+        "facing=down_x_east": { "model": "soviet:window_corner", "x": 180, "y": 90 },
+	"facing=down_x_west": { "model": "soviet:window_corner", "x": 180, "y": 270 },
+        "facing=up_z_north": { "model": "soviet:window_corner", "y": 180 },
+ 	"facing=up_z_south": { "model": "soviet:window_corner" },
+        "facing=up_x_east": { "model": "soviet:window_corner", "y": 270 },
+	"facing=up_x_west": { "model": "soviet:window_corner", "y": 90 },
+        "facing=east": { "model": "soviet:window_corner", "x": 90, "y": 90 },
+        "facing=west": { "model": "soviet:window_corner", "x": 90, "y": 270 },
+        "facing=south" : { "model": "soviet:window_corner", "x": 90, "y": 180 },
+        "facing=north" : { "model": "soviet:window_corner", "x": 90 }
+    }
+}

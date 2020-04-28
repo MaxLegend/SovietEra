@@ -1,0 +1,28 @@
+{
+    "variants": {
+	"broken=false,down=false,facing=east":  { "model": "soviet:soviet_window_leaf_def", "y": 270},
+	"broken=false,down=true,facing=east":  { "model": "soviet:soviet_window_leaf_up", "y": 270},
+
+	"broken=false,down=false,facing=west":  { "model": "soviet:soviet_window_leaf_def", "y": 90},
+	"broken=false,down=true,facing=west":  { "model": "soviet:soviet_window_leaf_up", "y": 90},
+
+	"broken=false,down=false,facing=south":  { "model": "soviet:soviet_window_leaf_def", "y": 0},
+	"broken=false,down=true,facing=south":  { "model": "soviet:soviet_window_leaf_up", "y": 0},
+
+	"broken=false,down=false,facing=north":  { "model": "soviet:soviet_window_leaf_def", "y": 180},
+	"broken=false,down=true,facing=north":  { "model": "soviet:soviet_window_leaf_up", "y": 180},
+
+
+	"broken=true,down=false,facing=east":  { "model": "soviet:soviet_window_leaf_def_brok", "y": 270},
+	"broken=true,down=true,facing=east":  { "model": "soviet:soviet_window_leaf_up_brok", "y": 270},
+
+	"broken=true,down=false,facing=west":  { "model": "soviet:soviet_window_leaf_def_brok", "y": 90},
+	"broken=true,down=true,facing=west":  { "model": "soviet:soviet_window_leaf_up_brok", "y": 90},
+
+	"broken=true,down=false,facing=south":  { "model": "soviet:soviet_window_leaf_def_brok", "y": 0},
+	"broken=true,down=true,facing=south":  { "model": "soviet:soviet_window_leaf_up_brok", "y": 0},
+
+	"broken=true,down=false,facing=north":  { "model": "soviet:soviet_window_leaf_def_brok", "y": 180},
+	"broken=true,down=true,facing=north":  { "model": "soviet:soviet_window_leaf_up_brok", "y": 180}
+    }
+}

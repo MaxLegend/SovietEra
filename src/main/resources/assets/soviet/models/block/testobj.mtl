@@ -1,0 +1,10 @@
+# Made in Blockbench 2.3.2
+newmtl 0
+map_Kd hermodoor.png
+newmtl 1
+map_Kd rusty_ralling.png
+newmtl 2
+map_Kd hermodoor32.png
+newmtl 3
+map_Kd dark_metal.png
+newmtl none

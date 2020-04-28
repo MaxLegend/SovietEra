@@ -1,0 +1,10 @@
+{
+    "variants": {
+	"facing=west":  { "model": "soviet:beton_panel_west"},
+ 	"facing=up":  { "model": "soviet:beton_panel_down"},
+        "facing=east":  { "model": "soviet:beton_panel_east"},
+        "facing=down":  { "model": "soviet:beton_panel_up"},
+        "facing=south": { "model": "soviet:beton_panel_north"},
+        "facing=north": { "model": "soviet:beton_panel_south" }
+    }
+}

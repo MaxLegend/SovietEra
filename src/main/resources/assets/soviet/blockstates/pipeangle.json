@@ -1,0 +1,10 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:pipeangle", "y": 90},
+        "facing=west":  { "model": "soviet:pipeangle", "y": 270},
+        "facing=south": { "model": "soviet:pipeangle", "y": 180 },
+        "facing=north": { "model": "soviet:pipeangle", "y": 0 }
+    }
+}
+

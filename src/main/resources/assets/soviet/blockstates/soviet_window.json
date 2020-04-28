@@ -1,0 +1,46 @@
+{
+    "variants": {
+        "broken=false,down=true,facing=east,up=true":  { "model": "soviet:soviet_window_double", "y": 270},
+	"broken=false,down=false,facing=east,up=false":  { "model": "soviet:soviet_window_def", "y": 270},
+	"broken=false,down=false,facing=east,up=true":  { "model": "soviet:soviet_window_down", "y": 270},
+	"broken=false,down=true,facing=east,up=false":  { "model": "soviet:soviet_window_up", "y": 270},
+
+        "broken=false,down=true,facing=west,up=true":  { "model": "soviet:soviet_window_double", "y": 90},
+	"broken=false,down=false,facing=west,up=false":  { "model": "soviet:soviet_window_def", "y": 90},
+	"broken=false,down=false,facing=west,up=true":  { "model": "soviet:soviet_window_down", "y": 90},
+	"broken=false,down=true,facing=west,up=false":  { "model": "soviet:soviet_window_up", "y": 90},
+
+        "broken=false,down=true,facing=south,up=true":  { "model": "soviet:soviet_window_double", "y": 0},
+	"broken=false,down=false,facing=south,up=false":  { "model": "soviet:soviet_window_def", "y": 0},
+	"broken=false,down=false,facing=south,up=true":  { "model": "soviet:soviet_window_down", "y": 0},
+	"broken=false,down=true,facing=south,up=false":  { "model": "soviet:soviet_window_up", "y": 0},
+
+        "broken=false,down=true,facing=north,up=true":  { "model": "soviet:soviet_window_double", "y": 180},
+	"broken=false,down=false,facing=north,up=false":  { "model": "soviet:soviet_window_def", "y": 180},
+	"broken=false,down=false,facing=north,up=true":  { "model": "soviet:soviet_window_down", "y": 180},
+	"broken=false,down=true,facing=north,up=false":  { "model": "soviet:soviet_window_up", "y": 180},
+
+
+        "broken=true,down=true,facing=east,up=true":  { "model": "soviet:soviet_window_double_brok", "y": 270},
+	"broken=true,down=false,facing=east,up=false":  { "model": "soviet:soviet_window_def_brok", "y": 270},
+	"broken=true,down=false,facing=east,up=true":  { "model": "soviet:soviet_window_down_brok", "y": 270},
+	"broken=true,down=true,facing=east,up=false":  { "model": "soviet:soviet_window_up_brok", "y": 270},
+
+        "broken=true,down=true,facing=west,up=true":  { "model": "soviet:soviet_window_double_brok", "y": 90},
+	"broken=true,down=false,facing=west,up=false":  { "model": "soviet:soviet_window_def_brok", "y": 90},
+	"broken=true,down=false,facing=west,up=true":  { "model": "soviet:soviet_window_down_brok", "y": 90},
+	"broken=true,down=true,facing=west,up=false":  { "model": "soviet:soviet_window_up_brok", "y": 90},
+
+        "broken=true,down=true,facing=south,up=true":  { "model": "soviet:soviet_window_double_brok", "y": 0},
+	"broken=true,down=false,facing=south,up=false":  { "model": "soviet:soviet_window_def_brok", "y": 0},
+	"broken=true,down=false,facing=south,up=true":  { "model": "soviet:soviet_window_down_brok", "y": 0},
+	"broken=true,down=true,facing=south,up=false":  { "model": "soviet:soviet_window_up_brok", "y": 0},
+
+        "broken=true,down=true,facing=north,up=true":  { "model": "soviet:soviet_window_double_brok", "y": 180},
+	"broken=true,down=false,facing=north,up=false":  { "model": "soviet:soviet_window_def_brok", "y": 180},
+	"broken=true,down=false,facing=north,up=true":  { "model": "soviet:soviet_window_down_brok", "y": 180},
+	"broken=true,down=true,facing=north,up=false":  { "model": "soviet:soviet_window_up_brok", "y": 180}
+
+
+    }
+}

@@ -1,0 +1,13 @@
+
+{
+    "variants": {
+        "facing=east,half=back":  { "model": "soviet:soviet_bed_back", "y": 270},
+        "facing=west,half=back":  { "model": "soviet:soviet_bed_back", "y": 90},
+        "facing=south,half=back": { "model": "soviet:soviet_bed_back", "y": 0 },
+        "facing=north,half=back": { "model": "soviet:soviet_bed_back", "y": 180 },
+        "facing=east,half=front":  { "model": "soviet:soviet_bed_front", "y": 270},
+        "facing=west,half=front":  { "model": "soviet:soviet_bed_front", "y": 90},
+        "facing=south,half=front": { "model": "soviet:soviet_bed_front", "y": 0 },
+        "facing=north,half=front": { "model": "soviet:soviet_bed_front", "y": 180 }
+    }
+}

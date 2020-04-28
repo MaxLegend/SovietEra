@@ -1,0 +1,114 @@
+{
+	"parent": "block/cube_all",
+	"__comment": "Designed by Pavel Durov with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "soviet:blocks/rusty_ralling",
+		"texture": "soviet:blocks/rusty_ralling"
+	},
+	"elements": [
+		{
+			"__comment": "Cube1",
+			"from": [ 15, 1, 0 ],
+			"to": [ 16, 2, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 1 ], "texture": "#texture", "rotation": 90 },
+				"up": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture", "rotation": 270 },
+				"north": { "uv": [ 0, 14, 1, 15 ], "texture": "#texture" },
+				"south": { "uv": [ 15, 14, 16, 15 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 14, 16, 15 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 14, 16, 15 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Cube1",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 1, 1 ],
+			"faces": {
+				"down": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 0, 16, 1 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 15, 1, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 15, 15, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Cube1",
+			"from": [ 0, 0, 3 ],
+			"to": [ 16, 1, 4 ],
+			"faces": {
+				"down": { "uv": [ 0, 12, 16, 13 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 3, 16, 4 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 3, 15, 4, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 12, 15, 13, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Cube1",
+			"from": [ 0, 0, 6 ],
+			"to": [ 16, 1, 7 ],
+			"faces": {
+				"down": { "uv": [ 0, 9, 16, 10 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 6, 16, 7 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 6, 15, 7, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 9, 15, 10, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Cube1",
+			"from": [ 0, 0, 9 ],
+			"to": [ 16, 1, 10 ],
+			"faces": {
+				"down": { "uv": [ 0, 6, 16, 7 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 9, 16, 10 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 9, 15, 10, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 6, 15, 7, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Cube1",
+			"from": [ 0, 0, 12 ],
+			"to": [ 16, 1, 13 ],
+			"faces": {
+				"down": { "uv": [ 0, 3, 16, 4 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 12, 16, 13 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 12, 15, 13, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 3, 15, 4, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Cube1",
+			"from": [ 0, 0, 15 ],
+			"to": [ 16, 1, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 1 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 15, 15, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 15, 1, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Cube1",
+			"from": [ 0, 1, 0 ],
+			"to": [ 1, 2, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 1 ], "texture": "#texture", "rotation": 90 },
+				"up": { "uv": [ 0, 15, 16, 16 ], "texture": "#texture", "rotation": 270 },
+				"north": { "uv": [ 0, 14, 1, 15 ], "texture": "#texture" },
+				"south": { "uv": [ 15, 14, 16, 15 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 14, 16, 15 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 14, 16, 15 ], "texture": "#texture" }
+			}
+		}
+	]
+}

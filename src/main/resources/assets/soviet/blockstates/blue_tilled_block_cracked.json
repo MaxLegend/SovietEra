@@ -1,0 +1,10 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:blue_tilled_block_cracked", "y": 90},
+        "facing=west":  { "model": "soviet:blue_tilled_block_cracked", "y": 270},
+        "facing=south": { "model": "soviet:blue_tilled_block_cracked", "y": 180 },
+        "facing=north": { "model": "soviet:blue_tilled_block_cracked", "y": 0 }
+    }
+}
+

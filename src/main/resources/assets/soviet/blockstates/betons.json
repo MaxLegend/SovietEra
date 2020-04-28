@@ -1,0 +1,16 @@
+{
+  "variants": {
+"variant=white_beton": { "model": "soviet:beton_whited" },
+"variant=white_beton_crack": { "model": "soviet:beton_whited_cracked" },
+    "variant=gray_beton": { "model": "soviet:beton" },
+"variant=gray_beton_crack": { "model": "soviet:cracked_beton" },
+"variant=green_beton_crack": { "model": "soviet:cracked_green_beton" },
+ "variant=green_beton": { "model": "soviet:green_beton" },
+"variant=blue_beton_crack": { "model": "soviet:blue_beton_crack" },
+ "variant=blue_beton": { "model": "soviet:blue_beton" },
+"variant=beige_beton_crack": { "model": "soviet:beige_beton_crack" },
+ "variant=beige_beton": { "model": "soviet:beige_beton" },
+"variant=beige_beton2_crack": { "model": "soviet:beige_beton2_crack" },
+ "variant=beige_beton2": { "model": "soviet:beige_beton2" }
+  }
+}

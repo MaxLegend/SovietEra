@@ -1,0 +1,43 @@
+{
+    "variants": {
+        "facing=east,half=lower,hinge=left,open=false,powered=false":  { "model": "soviet:internal_door_rh" },
+        "facing=south,half=lower,hinge=left,open=false,powered=false": { "model": "soviet:internal_door_rh", "y": 90 },
+        "facing=west,half=lower,hinge=left,open=false,powered=false":  { "model": "soviet:internal_door_rh", "y": 180 },
+        "facing=north,half=lower,hinge=left,open=false,powered=false": { "model": "soviet:internal_door_rh", "y": 270 },
+
+        "facing=east,half=lower,hinge=right,open=false,powered=false":  { "model": "soviet:internal_door_rh_rhinge" },
+        "facing=south,half=lower,hinge=right,open=false,powered=false": { "model": "soviet:internal_door_rh_rhinge", "y": 90 },
+        "facing=west,half=lower,hinge=right,open=false,powered=false":  { "model": "soviet:internal_door_rh_rhinge", "y": 180 },
+        "facing=north,half=lower,hinge=right,open=false,powered=false": { "model": "soviet:internal_door_rh_rhinge", "y": 270 },
+
+        "facing=east,half=lower,hinge=left,open=true,powered=false":  { "model": "soviet:internal_door", "y": 90 },
+        "facing=south,half=lower,hinge=left,open=true,powered=false": { "model": "soviet:internal_door", "y": 180 },
+        "facing=west,half=lower,hinge=left,open=true,powered=false":  { "model": "soviet:internal_door", "y": 270 },
+        "facing=north,half=lower,hinge=left,open=true,powered=false": { "model": "soviet:internal_door" },
+
+        "facing=east,half=lower,hinge=right,open=true,powered=false":  { "model": "soviet:internal_door_rhinge", "y": 270 },
+        "facing=south,half=lower,hinge=right,open=true,powered=false": { "model": "soviet:internal_door_rhinge" },
+        "facing=west,half=lower,hinge=right,open=true,powered=false":  { "model": "soviet:internal_door_rhinge", "y": 90 },
+        "facing=north,half=lower,hinge=right,open=true,powered=false": { "model": "soviet:internal_door_rhinge", "y": 180 },
+
+        "facing=east,half=upper,hinge=left,open=false,powered=false":  { "model": "soviet:internal_door_top_rh" },
+        "facing=south,half=upper,hinge=left,open=false,powered=false": { "model": "soviet:internal_door_top_rh", "y": 90 },
+        "facing=west,half=upper,hinge=left,open=false,powered=false":  { "model": "soviet:internal_door_top_rh", "y": 180 },
+        "facing=north,half=upper,hinge=left,open=false,powered=false": { "model": "soviet:internal_door_top_rh", "y": 270 },
+
+        "facing=east,half=upper,hinge=right,open=false,powered=false":  { "model": "soviet:internal_door_top_rh_rhinge" },
+        "facing=south,half=upper,hinge=right,open=false,powered=false": { "model": "soviet:internal_door_top_rh_rhinge", "y": 90 },
+        "facing=west,half=upper,hinge=right,open=false,powered=false":  { "model": "soviet:internal_door_top_rh_rhinge", "y": 180 },
+        "facing=north,half=upper,hinge=right,open=false,powered=false": { "model": "soviet:internal_door_top_rh_rhinge", "y": 270 },
+
+        "facing=east,half=upper,hinge=left,open=true,powered=false":  { "model": "soviet:internal_door_top", "y": 90 },
+        "facing=south,half=upper,hinge=left,open=true,powered=false": { "model": "soviet:internal_door_top", "y": 180 },
+        "facing=west,half=upper,hinge=left,open=true,powered=false":  { "model": "soviet:internal_door_top", "y": 270 },
+        "facing=north,half=upper,hinge=left,open=true,powered=false": { "model": "soviet:internal_door_top" },
+
+        "facing=east,half=upper,hinge=right,open=true,powered=false":  { "model": "soviet:internal_door_top_rhinge", "y": 270 },
+        "facing=south,half=upper,hinge=right,open=true,powered=false": { "model": "soviet:internal_door_top_rhinge" },
+        "facing=west,half=upper,hinge=right,open=true,powered=false":  { "model": "soviet:internal_door_top_rhinge", "y": 90 },
+        "facing=north,half=upper,hinge=right,open=true,powered=false": { "model": "soviet:internal_door_top_rhinge", "y": 180 }
+    }
+}

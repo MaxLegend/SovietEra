@@ -1,0 +1,116 @@
+{
+	"__comment": "Designed by Pavel Durov with Cubik Studio - https://cubik.studio",
+	"parent": "block/door_bottom",
+	"textures": {
+		"bottom": "soviet:blocks/door_wood",
+		"particle": "soviet:blocks/door_wood",
+		"texture": "soviet:blocks/beton_whited",
+		"texture1": "soviet:blocks/lampsteel"
+	},
+	"elements": [
+		{
+			"__comment": "Cube1",
+			"from": [ 0, 0, 0 ],
+			"to": [ 2, 16, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 13, 16, 15 ], "texture": "#bottom", "rotation": 270 },
+				"up": { "uv": [ 0, 0, 16, 2 ], "texture": "#bottom", "rotation": 90 },
+				"north": { "uv": [ 0, 0, 2, 16 ], "texture": "#bottom" },
+				"south": { "uv": [ 13, 0, 15, 15.5 ], "texture": "#bottom" },
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#bottom" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#bottom" }
+			}
+		},
+		{
+			"__comment": "Cube4",
+			"from": [ -0.5, 15, 1 ],
+			"to": [ 0, 16, 15 ],
+			"faces": {
+				"down": { "uv": [ 0, 14, 16, 15 ], "texture": "#bottom", "rotation": 180 },
+				"up": { "uv": [ 2, 0, 3, 16 ], "texture": "#bottom", "rotation": 180 },
+				"north": { "uv": [ 2, 0, 3, 16 ], "texture": "#bottom" },
+				"south": { "uv": [ 13, 0, 14, 16 ], "texture": "#bottom" },
+				"west": { "uv": [ 0, 0, 3, 16 ], "texture": "#bottom", "rotation": 90 },
+				"east": { "uv": [ 0, 0, 3, 16 ], "texture": "#bottom" }
+			}
+		},
+		{
+			"__comment": "Cube4",
+			"from": [ -0.5, 0, 15 ],
+			"to": [ 0, 16, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 9.5, 16, 11 ], "texture": "#texture", "rotation": 180 },
+				"up": { "uv": [ 2, 0, 2.5, 1 ], "texture": "#texture", "rotation": 180 },
+				"north": { "uv": [ 2, 0, 4, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 13.5, 0, 15, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 14, 0, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 2.5, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Cube4",
+			"from": [ -0.5, 0, 0 ],
+			"to": [ 0, 16, 1 ],
+			"faces": {
+				"down": { "uv": [ 0, 9.5, 16, 11 ], "texture": "#texture", "rotation": 180 },
+				"up": { "uv": [ 2, 0, 2.5, 1 ], "texture": "#texture", "rotation": 180 },
+				"north": { "uv": [ 2, 0, 4, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 13.5, 0, 15, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 14, 0, 16, 16 ], "texture": "#bottom" },
+				"east": { "uv": [ 0, 0, 2.5, 16 ], "texture": "#bottom" }
+			}
+		},
+		{
+			"__comment": "Cube4",
+			"from": [ -0.5, 0, 2.5 ],
+			"to": [ 0, 2, 13.5 ],
+			"faces": {
+				"down": { "uv": [ 0, 14, 16, 15 ], "texture": "#bottom", "rotation": 180 },
+				"up": { "uv": [ 2, 0, 3, 16 ], "texture": "#bottom", "rotation": 180 },
+				"north": { "uv": [ 2, 0, 3, 16 ], "texture": "#bottom" },
+				"south": { "uv": [ 13, 0, 14, 16 ], "texture": "#bottom" },
+				"west": { "uv": [ 0, 0, 3, 16 ], "texture": "#bottom", "rotation": 90 },
+				"east": { "uv": [ 0, 0, 3, 16 ], "texture": "#bottom" }
+			}
+		},
+		{
+			"__comment": "Cube4",
+			"from": [ -0.5, 4.5, 2.5 ],
+			"to": [ 0, 14, 13.5 ],
+			"faces": {
+				"down": { "uv": [ 0, 14, 16, 15 ], "texture": "#bottom", "rotation": 180 },
+				"up": { "uv": [ 2, 0, 3, 16 ], "texture": "#bottom", "rotation": 180 },
+				"north": { "uv": [ 2, 0, 3, 16 ], "texture": "#bottom" },
+				"south": { "uv": [ 13, 0, 14, 16 ], "texture": "#bottom" },
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#bottom", "rotation": 90 },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#bottom" }
+			}
+		},
+		{
+			"__comment": "Cube9",
+			"from": [ -1.5, 0, 14 ],
+			"to": [ -1, 1, 14.5 ],
+			"faces": {
+				"down": { "uv": [ 14.5, 1.5, 15, 2 ], "texture": "#texture1" },
+				"up": { "uv": [ 14.5, 14, 15, 14.5 ], "texture": "#texture1" },
+				"north": { "uv": [ 1, 15, 1.5, 16 ], "texture": "#texture1" },
+				"south": { "uv": [ 14.5, 15, 15, 16 ], "texture": "#texture1" },
+				"west": { "uv": [ 14, 15, 14.5, 16 ], "texture": "#texture1" },
+				"east": { "uv": [ 1.5, 15, 2, 16 ], "texture": "#texture1" }
+			}
+		},
+		{
+			"__comment": "Cube9",
+			"from": [ -1.5, 1, 14 ],
+			"to": [ 0, 1.5, 14.5 ],
+			"faces": {
+				"down": { "uv": [ 14.5, 1.5, 16, 2 ], "texture": "#texture1" },
+				"up": { "uv": [ 14.5, 14, 16, 14.5 ], "texture": "#texture1" },
+				"north": { "uv": [ 0, 14.5, 1.5, 15 ], "texture": "#texture1" },
+				"south": { "uv": [ 14.5, 14.5, 16, 15 ], "texture": "#texture1" },
+				"west": { "uv": [ 14, 14.5, 14.5, 15 ], "texture": "#texture1" },
+				"east": { "uv": [ 1.5, 14.5, 2, 15 ], "texture": "#texture1" }
+			}
+		}
+	]
+}

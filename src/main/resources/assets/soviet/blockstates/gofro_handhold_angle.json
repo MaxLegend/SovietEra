@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:gofro_handhold_angle", "y": 90},
+        "facing=west":  { "model": "soviet:gofro_handhold_angle", "y": 270},
+        "facing=south": { "model": "soviet:gofro_handhold_angle", "y": 180 },
+        "facing=north": { "model": "soviet:gofro_handhold_angle", "y": 0 }
+    }
+}

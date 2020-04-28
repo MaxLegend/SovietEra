@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:factory_window", "y": 90},
+        "facing=west":  { "model": "soviet:factory_window", "y": 270},
+        "facing=south": { "model": "soviet:factory_window", "y": 180 },
+        "facing=north": { "model": "soviet:factory_window", "y": 0 }
+    }
+}

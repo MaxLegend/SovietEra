@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:contact_wire_angle", "y": 90},
+        "facing=west":  { "model": "soviet:contact_wire_angle", "y": 270},
+        "facing=south": { "model": "soviet:contact_wire_angle", "y": 180 },
+        "facing=north": { "model": "soviet:contact_wire_angle", "y": 0 }
+    }
+}

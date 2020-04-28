@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=east,powered=false": { "model": "soviet:relay_off", "x": 180, "y": 90 },
+        "facing=west,powered=false": { "model": "soviet:relay_off", "x": 180, "y": 270 },
+        "facing=south,powered=false" : { "model": "soviet:relay_off", "x": 180, "y": 180 },
+        "facing=north,powered=false" : { "model": "soviet:relay_off", "x": 180 },
+        "facing=east,powered=true": { "model": "soviet:relay_on", "x": 180, "y": 90 },
+        "facing=west,powered=true": { "model": "soviet:relay_on", "x": 180, "y": 270 },
+        "facing=south,powered=true": { "model": "soviet:relay_on", "x": 180, "y": 180 },
+        "facing=north,powered=true": { "model": "soviet:relay_on", "x": 180 }
+    }
+}

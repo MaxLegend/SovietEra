@@ -1,0 +1,10 @@
+{
+    "variants": {
+	"facing=west":  { "model": "soviet:mega_lamp", "x": 90, "y": 90},
+ 	"facing=up":  { "model": "soviet:mega_lamp", "x": 180},
+        "facing=east":  { "model": "soviet:mega_lamp", "x": 90, "y": 270},
+        "facing=down":  { "model": "soviet:mega_lamp", "y": 270},
+        "facing=south": { "model": "soviet:mega_lamp", "y": 0, "x": 90 },
+        "facing=north": { "model": "soviet:mega_lamp", "y": 0, "x": 270  }
+    }
+}

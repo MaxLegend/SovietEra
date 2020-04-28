@@ -1,0 +1,10 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:rubbish", "y": 90},
+        "facing=west":  { "model": "soviet:rubbish", "y": 270},
+        "facing=south": { "model": "soviet:rubbish", "y": 180 },
+        "facing=north": { "model": "soviet:rubbish", "y": 0 }
+    }
+}
+

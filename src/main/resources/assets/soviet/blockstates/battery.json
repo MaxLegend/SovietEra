@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:battery", "y": 90},
+        "facing=west":  { "model": "soviet:battery", "y": 270},
+        "facing=south": { "model": "soviet:battery", "y": 180 },
+        "facing=north": { "model": "soviet:battery", "y": 0 }
+    }
+}

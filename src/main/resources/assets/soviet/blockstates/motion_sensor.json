@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "down=false,facing=east,is_active=false":  { "model": "soviet:motion_sensor", "y": 270},
+        "down=false,facing=west,is_active=false":  { "model": "soviet:motion_sensor", "y": 90},
+        "down=false,facing=south,is_active=false": { "model": "soviet:motion_sensor", "y": 0 },
+        "down=false,facing=north,is_active=false": { "model": "soviet:motion_sensor", "y": 180 },
+        "down=false,facing=east,is_active=true":  { "model": "soviet:motion_sensor_enb", "y": 270},
+        "down=false,facing=west,is_active=true":  { "model": "soviet:motion_sensor_enb", "y": 90},
+        "down=false,facing=south,is_active=true": { "model": "soviet:motion_sensor_enb", "y": 0 },
+        "down=false,facing=north,is_active=true": { "model": "soviet:motion_sensor_enb", "y": 180 },
+  	"down=true,facing=east,is_active=false":  { "model": "soviet:motion_sensor_down", "y": 270},
+        "down=true,facing=west,is_active=false":  { "model": "soviet:motion_sensor_down", "y": 90},
+        "down=true,facing=south,is_active=false": { "model": "soviet:motion_sensor_down", "y": 0 },
+        "down=true,facing=north,is_active=false": { "model": "soviet:motion_sensor_down", "y": 180 },
+        "down=true,facing=east,is_active=true":  { "model": "soviet:motion_sensor_down_enb", "y": 270},
+        "down=true,facing=west,is_active=true":  { "model": "soviet:motion_sensor_down_enb", "y": 90},
+        "down=true,facing=south,is_active=true": { "model": "soviet:motion_sensor_down_enb", "y": 0 },
+        "down=true,facing=north,is_active=true": { "model": "soviet:motion_sensor_down_enb", "y": 180 }
+
+    }
+}
+

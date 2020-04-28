@@ -1,0 +1,10 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:soviet_box", "y": 90},
+        "facing=west":  { "model": "soviet:soviet_box", "y": 270},
+        "facing=south": { "model": "soviet:soviet_box", "y": 180 },
+        "facing=north": { "model": "soviet:soviet_box", "y": 0 }
+    }
+}
+

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:street_light_middle", "y": 90},
+        "facing=west":  { "model": "soviet:street_light_middle", "y": 270},
+        "facing=south": { "model": "soviet:street_light_middle", "y": 180 },
+        "facing=north": { "model": "soviet:street_light_middle", "y": 0 }
+    }
+}

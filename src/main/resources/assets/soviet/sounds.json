@@ -1,0 +1,91 @@
+{
+   "buzzlump": {
+       "category": "blocks",
+       "sounds": [
+	{
+           "name": "soviet:buzzlump"
+	}
+       ]
+   },
+   "megaenable": {
+       "category": "blocks",
+       "sounds": [
+	{
+           "name": "soviet:megaenable"
+	}
+       ]
+    },
+  "rusty_lever": {
+       "category": "blocks",
+       "sounds": [
+	{
+           "name": "soviet:rusty_lever"
+	}
+       ]
+    },
+   "alm_door": {
+       "category": "blocks",
+       "sounds": [
+	{
+           "name": "soviet:alm_door"
+	}
+       ]
+    },
+   "enablelump": {
+       "category": "blocks",
+       "sounds": [
+	{
+           "name": "soviet:enablelump"
+	}
+       ]
+    },
+   "lum_lamp_enable": {
+       "category": "blocks",
+       "sounds": [
+	{
+           "name": "soviet:lum_lamp_enable"
+	}
+       ]
+    },
+ "lum_lamp_buzz": {
+       "category": "blocks",
+       "sounds": [
+	{
+           "name": "soviet:lum_lamp_buzz"
+	}
+       ]
+    },
+  "openhermodoor": {
+       "category": "blocks",
+       "sounds": [
+	{
+           "name": "soviet:openhermodoor"
+	}
+       ]
+   },
+ "airlock": {
+       "category": "blocks",
+       "sounds": [
+	{
+           "name": "soviet:airlock"
+	}
+       ]
+   }, 
+"vent_start": {
+       "category": "blocks",
+       "sounds": [
+	{
+           "name": "soviet:vent_start"
+	}
+       ]
+   },
+ "vent": {
+       "category": "blocks",
+       "sounds": [
+	{
+           "name": "soviet:vent"
+	}
+       ]
+   }
+
+}

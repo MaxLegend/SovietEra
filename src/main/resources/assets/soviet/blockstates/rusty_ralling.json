@@ -1,0 +1,17 @@
+{
+    "multipart": [
+        {   "apply": { "model": "soviet:rusty_ralling" }},
+        {   "when": { "north": "true" },
+            "apply": { "model": "soviet:rusty_ralling_side", "y": 180, "uvlock": true }
+        },
+        {   "when": { "east": "true" },
+            "apply": { "model": "soviet:rusty_ralling_side", "y": 270, "uvlock": true }
+        },
+        {   "when": { "south": "true" },
+            "apply": { "model": "soviet:rusty_ralling_side", "uvlock": true }
+        },
+        {   "when": { "west": "true" },
+            "apply": { "model": "soviet:rusty_ralling_side", "y": 90, "uvlock": true }
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:street_fence", "y": 270},
+        "facing=west":  { "model": "soviet:street_fence", "y": 90},
+        "facing=south": { "model": "soviet:street_fence", "y": 0 },
+        "facing=north": { "model": "soviet:street_fence", "y": 180 }
+    }
+}

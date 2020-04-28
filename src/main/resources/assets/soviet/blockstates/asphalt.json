@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:asphalt", "y": 90},
+        "facing=west":  { "model": "soviet:asphalt", "y": 270},
+        "facing=south": { "model": "soviet:asphalt", "y": 180 },
+        "facing=north": { "model": "soviet:asphalt", "y": 0 }
+    }
+}

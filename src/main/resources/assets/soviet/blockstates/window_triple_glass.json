@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=down_z": { "model": "soviet:window_triple_glass", "x": 180, "y": 90},
+        "facing=down_x": { "model": "soviet:window_triple_glass", "x": 180, "y": 180 },
+        "facing=up_z": { "model": "soviet:window_triple_glass", "y": 90  },
+        "facing=up_x": { "model": "soviet:window_triple_glass", "y": 180 },
+        "facing=east": { "model": "soviet:window_triple_glass", "x": 90, "y": 90 },
+        "facing=west": { "model": "soviet:window_triple_glass", "x": 90, "y": 270 },
+        "facing=south" : { "model": "soviet:window_triple_glass", "x": 90, "y": 180 },
+        "facing=north" : { "model": "soviet:window_triple_glass", "x": 90 }
+    }
+}

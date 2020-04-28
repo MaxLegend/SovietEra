@@ -1,0 +1,36 @@
+{
+	"__comment": "Designed by Pavel Durov with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "blocks/redstone_block",
+		"texture": "blocks/redstone_block",
+		"texture1": "blocks/redstone_block"
+	},
+	"elements": [
+		{
+			"__comment": "Center",
+			"from": [ 6, 6, 6 ],
+			"to": [ 10, 10, 10 ],
+			"faces": {
+				"down": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture", "rotation": 90 },
+				"up": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture", "rotation": 270 },
+				"north": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture" },
+				"south": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture" },
+				"west": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture" },
+				"east": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Plus Z",
+			"from": [ 6, 6, 10 ],
+			"to": [ 10, 10, 16 ],
+			"faces": {
+				"down": { "uv": [ 6, 0, 10, 6 ], "texture": "#texture" },
+				"up": { "uv": [ 6, 10, 10, 16 ], "texture": "#texture" },
+				"north": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture1" },
+				"south": { "uv": [ 5, 5, 11, 11 ], "texture": "#texture1" },
+				"west": { "uv": [ 10, 6, 16, 10 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 6, 6, 10 ], "texture": "#texture" }
+			}
+		}
+	]
+}

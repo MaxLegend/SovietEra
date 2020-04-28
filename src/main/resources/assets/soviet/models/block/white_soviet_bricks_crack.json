@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "soviet:blocks/white_soviet_bricks_crack"
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "com/elytradev/mini/MiniCoremod": 52,
+  "com/elytradev/mini/MiniTransformer": 52,
+  "com/elytradev/mini/PatchContext": 52,
+  "com/elytradev/mini/PatchContext$SearchResult": 52,
+  "com/elytradev/mini/annotation/Patch": 52,
+  "com/elytradev/mini/annotation/Patch$Class": 52,
+  "com/elytradev/mini/annotation/Patch$Classes": 52,
+  "com/elytradev/mini/annotation/Patch$Method": 52,
+  "com/elytradev/mini/annotation/Patch$Methods": 52,
+  "com/elytradev/mini/exception/PointerNotSetException": 52,
+  "com/elytradev/mini/exception/PointerOutOfBoundsException": 52
+}

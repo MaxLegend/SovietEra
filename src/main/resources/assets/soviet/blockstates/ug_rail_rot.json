@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:ug_rail_rot", "y": 270},
+        "facing=west":  { "model": "soviet:ug_rail_rot", "y": 90},
+        "facing=south": { "model": "soviet:ug_rail_rot", "y": 0 },
+        "facing=north": { "model": "soviet:ug_rail_rot", "y": 180 }
+    }
+}

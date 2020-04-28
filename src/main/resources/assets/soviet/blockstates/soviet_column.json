@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y":  { "model": "soviet:soviet_column" },
+        "axis=z":   { "model": "soviet:soviet_column", "x": 90 },
+        "axis=x":   { "model": "soviet:soviet_column", "x": 90, "y": 90 },
+        "axis=none": { "model": "soviet:soviet_column" }
+    }
+}

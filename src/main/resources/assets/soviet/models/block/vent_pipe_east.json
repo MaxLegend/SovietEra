@@ -1,0 +1,65 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"23": "soviet:blocks/sysblock",
+		"46": "soviet:blocks/dark_metal",
+		"47": "soviet:blocks/dark_sysblock",
+	"particle": "soviet:blocks/sysblock"
+	},
+	"elements": [
+		{
+			"from": [15, 9, 3],
+			"to": [16, 15, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 6], "texture": "#47"},
+				"east": {"uv": [0, 0, 10, 6], "texture": "#47"},
+				"south": {"uv": [0, 0, 1, 6], "texture": "#47"},
+				"west": {"uv": [0, 0, 10, 6], "texture": "#47"},
+				"up": {"uv": [0, 0, 1, 10], "texture": "#47"},
+				"down": {"uv": [0, 0, 1, 10], "texture": "#47"}
+			}
+		},
+		{
+			"from": [15, 15, 5],
+			"to": [16, 16, 6],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#46"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#46"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#46"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#46"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#46"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#46"}
+			}
+		},
+		{
+			"from": [15, 15, 10],
+			"to": [16, 16, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#46"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#46"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#46"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#46"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#46"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#46"}
+			}
+		},
+		{
+			"from": [12.75, 10, 4],
+			"to": [15, 14, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 14, 4], "texture": "#23"},
+				"east": {"uv": [0, 0, 8, 4], "texture": "#23"},
+				"south": {"uv": [0, 0, 14, 4], "texture": "#23"},
+				"west": {"uv": [0, 0, 8, 4], "texture": "#23"},
+				"up": {"uv": [0, 0, 14, 8], "texture": "#23"},
+				"down": {"uv": [0, 0, 14, 8], "texture": "#23"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "east",
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

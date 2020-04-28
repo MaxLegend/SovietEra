@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:symbol/z", "y": 270},
+        "facing=west":  { "model": "soviet:symbol/z", "y": 90},
+        "facing=south": { "model": "soviet:symbol/z", "y": 0 },
+        "facing=north": { "model": "soviet:symbol/z", "y": 180 }
+    }
+}

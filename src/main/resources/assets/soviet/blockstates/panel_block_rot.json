@@ -1,0 +1,10 @@
+{
+    "variants": {
+	"facing=west":  { "model": "soviet:panel_block_west"},
+ 	"facing=up":  { "model": "soviet:panel_block_down"},
+        "facing=east":  { "model": "soviet:panel_block_east"},
+        "facing=down":  { "model": "soviet:panel_block_up"},
+        "facing=south": { "model": "soviet:panel_block_north"},
+        "facing=north": { "model": "soviet:panel_block_south" }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+	"facing=east":  { "model": "soviet:beton_with_ralling", "x": 90, "y": 90},
+ 	"facing=up":  { "model": "soviet:beton_with_ralling", "y": 270},
+        "facing=west":  { "model": "soviet:beton_with_ralling", "x": 90, "y": 270},
+        "facing=down":  { "model": "soviet:beton_with_ralling", "x": 180},
+        "facing=north": { "model": "soviet:beton_with_ralling", "y": 0, "x": 90 },
+        "facing=south": { "model": "soviet:beton_with_ralling", "y": 0, "x": 270  }
+    }
+}

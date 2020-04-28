@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:steve_helm", "y": 270},
+        "facing=west":  { "model": "soviet:steve_helm", "y": 90},
+        "facing=south": { "model": "soviet:steve_helm", "y": 0 },
+        "facing=north": { "model": "soviet:steve_helm", "y": 180 }
+    }
+}

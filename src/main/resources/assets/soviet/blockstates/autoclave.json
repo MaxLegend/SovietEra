@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:autoclave", "y": 90},
+        "facing=west":  { "model": "soviet:autoclave", "y": 270},
+        "facing=south": { "model": "soviet:autoclave", "y": 180 },
+        "facing=north": { "model": "soviet:autoclave", "y": 0 }
+    }
+}

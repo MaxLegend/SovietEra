@@ -1,0 +1,17 @@
+{
+  "variants": {
+"variant=kafel_1": { "model": "soviet:kafel_1" },
+"variant=kafel_2": { "model": "soviet:kafel_2" },
+    "variant=kafel_3": { "model": "soviet:kafel_3" },
+"variant=kafel_1b": { "model": "soviet:kafel_1b" },
+"variant=kafel_2b": { "model": "soviet:kafel_2b" },
+    "variant=kafel_3b": { "model": "soviet:kafel_3b" },
+"variant=kafel_1c": { "model": "soviet:kafel_1c" },
+"variant=kafel_2c": { "model": "soviet:kafel_2c" },
+    "variant=kafel_3c": { "model": "soviet:kafel_3c" },
+"variant=kafel_4": { "model": "soviet:kafel_4" },
+    "variant=kafel_5": { "model": "soviet:kafel_5" },
+   "variant=kafel_6": { "model": "soviet:kafel_6" },
+ "variant=kafel_7": { "model": "soviet:kafel_7" }
+  }
+}

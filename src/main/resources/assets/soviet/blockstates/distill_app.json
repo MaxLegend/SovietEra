@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:distill_app", "y": 90},
+        "facing=west":  { "model": "soviet:distill_app", "y": 270},
+        "facing=south": { "model": "soviet:distill_app", "y": 180 },
+        "facing=north": { "model": "soviet:distill_app", "y": 0 }
+    }
+}

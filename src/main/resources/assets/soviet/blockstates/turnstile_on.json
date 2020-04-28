@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=east,is_p=false":  { "model": "soviet:turnstile_close", "y": 90},
+        "facing=west,is_p=false":  { "model": "soviet:turnstile_close", "y": 270},
+        "facing=south,is_p=false": { "model": "soviet:turnstile_close", "y": 180 },
+        "facing=north,is_p=false": { "model": "soviet:turnstile_close", "y": 0 },
+        "facing=east,is_p=true":  { "model": "soviet:turnstile_open", "y": 90},
+        "facing=west,is_p=true":  { "model": "soviet:turnstile_open", "y": 270},
+        "facing=south,is_p=true": { "model": "soviet:turnstile_open", "y": 180 },
+        "facing=north,is_p=true": { "model": "soviet:turnstile_open", "y": 0 }
+    }
+}

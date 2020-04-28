@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:armchair", "y": 270},
+        "facing=west":  { "model": "soviet:armchair", "y": 90},
+        "facing=south": { "model": "soviet:armchair", "y": 0 },
+        "facing=north": { "model": "soviet:armchair", "y": 180 }
+    }
+}

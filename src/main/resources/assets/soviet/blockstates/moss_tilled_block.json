@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:moss_tilled_block", "y": 90},
+        "facing=west":  { "model": "soviet:moss_tilled_block", "y": 270},
+        "facing=south": { "model": "soviet:moss_tilled_block", "y": 180 },
+        "facing=north": { "model": "soviet:moss_tilled_block", "y": 0 }
+    }
+}

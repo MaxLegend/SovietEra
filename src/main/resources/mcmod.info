@@ -1,0 +1,16 @@
+[
+{
+  "modid": "soviet",
+  "name": "Soviet Mod",
+  "description": "...",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "https://www.curseforge.com/minecraft/mc-mods/soviet-abandoned-lab-mod",
+  "authorList": ["LegendGamer"],
+  "credits": "Max_Freemen, SlimeF, Vincent11A for 3d models and textures",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

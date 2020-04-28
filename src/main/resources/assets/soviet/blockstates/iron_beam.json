@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:iron_beam", "y": 90},
+        "facing=west":  { "model": "soviet:iron_beam", "y": 270},
+        "facing=south": { "model": "soviet:iron_beam", "y": 180 },
+        "facing=north": { "model": "soviet:iron_beam", "y": 0 }
+    }
+}

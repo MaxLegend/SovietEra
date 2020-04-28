@@ -1,0 +1,52 @@
+{
+    "multipart": [
+        {   "when": { "facing": "north", "default": "true" },
+            "apply": { "model": "soviet:wires_n", "uvlock": true }
+        },
+        {   "when": { "facing": "west", "default": "true" },
+            "apply": { "model": "soviet:wires_w", "uvlock": true }
+        },
+        {   "when": { "facing": "east", "default": "true" },
+            "apply": { "model": "soviet:wires_e", "uvlock": true }
+        },
+        {   "when": { "facing": "south", "default": "true" },
+            "apply": { "model": "soviet:wires_s", "uvlock": true }
+        },
+        {   "when": { "facing": "north", "west": "true" },
+            "apply": { "model": "soviet:wires_w", "uvlock": true }
+        },
+        {   "when": { "facing": "north", "south": "true"  },
+            "apply": { "model": "soviet:wires_s", "uvlock": true }
+        },
+        {   "when": { "facing": "north", "east": "true" },
+            "apply": { "model": "soviet:wires_e", "uvlock": true }
+        },
+              {   "when": { "facing": "east", "north": "true" },
+            "apply": { "model": "soviet:wires_n", "uvlock": true }
+        },
+        {   "when": { "facing": "east", "west": "true"  },
+            "apply": { "model": "soviet:wires_w", "uvlock": true }
+        },
+        {   "when": { "facing": "east", "south": "true" },
+            "apply": { "model": "soviet:wires_s", "uvlock": true }
+        },
+              {   "when": { "facing": "south", "north": "true" },
+            "apply": { "model": "soviet:wires_n", "uvlock": true }
+        },
+        {   "when": { "facing": "south", "east": "true"  },
+            "apply": { "model": "soviet:wires_e", "uvlock": true }
+        },
+        {   "when": { "facing": "south", "west": "true" },
+            "apply": { "model": "soviet:wires_w", "uvlock": true }
+        },
+              {   "when": { "facing": "west", "north": "true" },
+            "apply": { "model": "soviet:wires_n", "uvlock": true }
+        },
+        {   "when": { "facing": "west", "east": "true"  },
+            "apply": { "model": "soviet:wires_e", "uvlock": true }
+        },
+        {   "when": { "facing": "west", "south": "true" },
+            "apply": { "model": "soviet:wires_s", "uvlock": true }
+        }
+    ]
+}

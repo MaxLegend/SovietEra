@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:bedside", "y": 90},
+        "facing=west":  { "model": "soviet:bedside", "y": 270},
+        "facing=south": { "model": "soviet:bedside", "y": 180 },
+        "facing=north": { "model": "soviet:bedside", "y": 0 }
+    }
+}

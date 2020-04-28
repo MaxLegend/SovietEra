@@ -1,0 +1,10 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:sysblock", "y": 90},
+        "facing=west":  { "model": "soviet:sysblock", "y": 270},
+        "facing=south": { "model": "soviet:sysblock", "y": 180 },
+        "facing=north": { "model": "soviet:sysblock", "y": 0 }
+    }
+}
+

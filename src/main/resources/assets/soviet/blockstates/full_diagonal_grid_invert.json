@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:full_diagonal_grid_invert", "y": 90},
+        "facing=west":  { "model": "soviet:full_diagonal_grid_invert", "y": 270},
+        "facing=south": { "model": "soviet:full_diagonal_grid_invert", "y": 180 },
+        "facing=north": { "model": "soviet:full_diagonal_grid_invert", "y": 0 }
+    }
+}

@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:glazed_tile_white_cracked", "y": 90},
+        "facing=west":  { "model": "soviet:glazed_tile_white_cracked", "y": 270},
+        "facing=south": { "model": "soviet:glazed_tile_white_cracked", "y": 180 },
+        "facing=north": { "model": "soviet:glazed_tile_white_cracked", "y": 0 }
+    }
+}

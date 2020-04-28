@@ -1,0 +1,52 @@
+{
+	"__comment": "Designed by Pavel Durov with Cubik Studio - https://cubik.studio",
+	"parent": "block/cube_all",
+	"textures": {
+		"particle": "soviet:blocks/hermodoor",
+		"texture": "soviet:blocks/hermodoor"
+	},
+	"elements": [
+		{
+			"__comment": "Cube10",
+			"from": [ 5, 0, 4.5 ],
+			"to": [ 11, 16, 11.5 ],
+			"rotation": { "origin": [ 5, 0, 11.5 ], "axis": "x", "angle": 0 },
+			"faces": {
+				"down": { "uv": [ 11, 11.5, 5, 4.5 ], "texture": "#texture" },
+				"up": { "uv": [ 5, 4.5, 11, 11.5 ], "texture": "#texture" },
+				"north": { "uv": [ 16, 11, 0, 5 ], "texture": "#texture", "rotation": 90 },
+				"south": { "uv": [ 0, 5, 16, 11 ], "texture": "#texture", "rotation": 270 },
+				"west": { "uv": [ 0, 4.5, 16, 11.5 ], "texture": "#texture", "rotation": 270 },
+				"east": { "uv": [ 0, 4.5, 16, 11.5 ], "texture": "#texture", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "Cube10",
+			"from": [ 0, 0, 11.5 ],
+			"to": [ 16, 16, 16 ],
+			"rotation": { "origin": [ 5, 0, 11.5 ], "axis": "x", "angle": 0 },
+			"faces": {
+				"down": { "uv": [ 15, 15, 1, 10.5 ], "texture": "#texture" },
+				"up": { "uv": [ 1, 10.5, 15, 15 ], "texture": "#texture" },
+				"north": { "uv": [ 16, 16, 0, 0 ], "texture": "#texture", "rotation": 90 },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 270 },
+				"west": { "uv": [ 1, 10.5, 15, 15 ], "texture": "#texture", "rotation": 270 },
+				"east": { "uv": [ 1, 10.5, 15, 15 ], "texture": "#texture", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "Cube10",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 4.5 ],
+			"rotation": { "origin": [ 5, 0, 11.5 ], "axis": "x", "angle": 0 },
+			"faces": {
+				"down": { "uv": [ 15, 6, 1, 1 ], "texture": "#texture" },
+				"up": { "uv": [ 1, 1, 15, 6 ], "texture": "#texture" },
+				"north": { "uv": [ 16, 16, 0, 0 ], "texture": "#texture", "rotation": 90 },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 270 },
+				"west": { "uv": [ 1, 1, 15, 6 ], "texture": "#texture", "rotation": 270 },
+				"east": { "uv": [ 1, 1, 15, 5.5 ], "texture": "#texture", "rotation": 90 }
+			}
+		}
+	]
+}

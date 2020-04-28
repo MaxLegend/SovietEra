@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:uf_lamp_break", "y": 270},
+        "facing=west":  { "model": "soviet:uf_lamp_break", "y": 90},
+        "facing=south": { "model": "soviet:uf_lamp_break", "y": 0 },
+        "facing=north": { "model": "soviet:uf_lamp_break", "y": 180 }
+    }
+}

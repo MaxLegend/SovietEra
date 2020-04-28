@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:soviet_tumb", "y": 90},
+        "facing=west":  { "model": "soviet:soviet_tumb", "y": 270},
+        "facing=south": { "model": "soviet:soviet_tumb", "y": 180 },
+        "facing=north": { "model": "soviet:soviet_tumb", "y": 0 }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=east,isangle=false":  { "model": "soviet:wallpaper_3", "y": 90},
+        "facing=west,isangle=false":  { "model": "soviet:wallpaper_3", "y": 270},
+        "facing=south,isangle=false": { "model": "soviet:wallpaper_3", "y": 180 },
+        "facing=north,isangle=false": { "model": "soviet:wallpaper_3", "y": 0 },
+        "facing=east,isangle=true":  { "model": "soviet:wallpaper_3_angle", "y": 90},
+        "facing=west,isangle=true":  { "model": "soviet:wallpaper_3_angle", "y": 270},
+        "facing=south,isangle=true": { "model": "soviet:wallpaper_3_angle", "y": 180 },
+        "facing=north,isangle=true": { "model": "soviet:wallpaper_3_angle", "y": 0 }
+    }
+}

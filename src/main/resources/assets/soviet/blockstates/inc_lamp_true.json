@@ -1,0 +1,10 @@
+{
+    "variants": {
+	"facing=west":  { "model": "soviet:inc_lamp", "x": 90, "y": 90},
+ 	"facing=up":  { "model": "soviet:inc_lamp", "x": 180},
+        "facing=east":  { "model": "soviet:inc_lamp", "x": 90, "y": 270},
+        "facing=down":  { "model": "soviet:inc_lamp", "y": 270},
+        "facing=south": { "model": "soviet:inc_lamp", "y": 0, "x": 90 },
+        "facing=north": { "model": "soviet:inc_lamp", "y": 0, "x": 270  }
+    }
+}

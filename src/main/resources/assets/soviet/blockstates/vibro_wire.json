@@ -1,0 +1,40 @@
+{
+    "multipart": [
+        {   "when": { "facing": "north", "def": "true" },
+            "apply": { "model": "soviet:vibro_wire_def","y": 180 }
+        },
+        {   "when": { "facing": "south", "def": "true"  },
+            "apply": { "model": "soviet:vibro_wire_def","y": 0, "uvlock": true }
+        },
+        {   "when": { "facing": "east", "def": "true"  },
+            "apply": { "model": "soviet:vibro_wire_def","y": 270, "uvlock": true }
+        },
+        {   "when": { "facing": "west", "def": "true"  },
+            "apply": { "model": "soviet:vibro_wire_def","y": 90,"uvlock": true }
+        },
+        {   "when": { "facing": "north", "def": "true", "is_l": "true"  },
+            "apply": { "model": "soviet:vibro_wire_r","y": 180,"uvlock": true }
+        },
+        {   "when": { "facing": "north", "def": "true", "is_r": "true"  },
+            "apply": { "model": "soviet:vibro_wire_l","y": 180,"uvlock": true }
+        },
+        {   "when": { "facing": "south", "def": "true", "is_r": "true"  },
+            "apply": { "model": "soviet:vibro_wire_r","y": 0,"uvlock": true }
+        },
+        {   "when": { "facing": "south", "def": "true", "is_l": "true"  },
+            "apply": { "model": "soviet:vibro_wire_l","y": 0,"uvlock": true }
+        },
+        {   "when": { "facing": "east", "def": "true", "is_r": "true"  },
+            "apply": { "model": "soviet:vibro_wire_r","y": 270,"uvlock": true }
+        },
+        {   "when": { "facing": "east", "def": "true", "is_l": "true"  },
+            "apply": { "model": "soviet:vibro_wire_l","y": 270,"uvlock": true }
+        },
+        {   "when": { "facing": "west", "def": "true", "is_l": "true"  },
+            "apply": { "model": "soviet:vibro_wire_r","y": 90,"uvlock": true }
+        },
+        {   "when": { "facing": "west", "def": "true", "is_r": "true"  },
+            "apply": { "model": "soviet:vibro_wire_l","y": 90,"uvlock": true }
+        }
+    ]
+}

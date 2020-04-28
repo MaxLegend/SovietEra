@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:floor_grid", "y": 90},
+        "facing=west":  { "model": "soviet:floor_grid", "y": 270},
+        "facing=south": { "model": "soviet:floor_grid", "y": 180 },
+        "facing=north": { "model": "soviet:floor_grid", "y": 0 }
+    }
+}

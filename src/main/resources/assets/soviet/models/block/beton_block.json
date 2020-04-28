@@ -1,0 +1,59 @@
+{
+   "parent": "block/cube_all",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "soviet:blocks/beton",
+		"1": "soviet:blocks/hermodoor",
+		"particle": "soviet:blocks/beton"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 2],
+			"to": [16, 11, 14],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [2, 0, 14, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [2, 0, 14, 16], "texture": "#0"},
+				"up": {"uv": [0, 2, 16, 14], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 12], "texture": "#0"}
+			}
+		},
+		{
+			"from": [12, 11, 5],
+			"to": [13, 13, 6],
+			"faces": {
+				"north": {"uv": [5, 5, 6, 7], "texture": "#1"},
+				"east": {"uv": [4, 4, 5, 6], "texture": "#1"},
+				"south": {"uv": [2, 3, 3, 5], "texture": "#1"},
+				"west": {"uv": [4, 4, 5, 6], "texture": "#1"},
+				"up": {"uv": [5, 4, 6, 6], "texture": "#1"},
+				"down": {"uv": [7, 4, 8, 6], "texture": "#1"}
+			}
+		},
+		{
+			"from": [12, 11, 10],
+			"to": [13, 13, 11],
+			"faces": {
+				"north": {"uv": [5, 5, 6, 6], "texture": "#1"},
+				"east": {"uv": [4, 4, 5, 6], "texture": "#1"},
+				"south": {"uv": [2, 3, 3, 4], "texture": "#1"},
+				"west": {"uv": [4, 4, 5, 6], "texture": "#1"},
+				"up": {"uv": [5, 4, 6, 8], "texture": "#1"},
+				"down": {"uv": [7, 4, 8, 8], "texture": "#1"}
+			}
+		},
+		{
+			"from": [12, 12, 6],
+			"to": [13, 13, 10],
+			"faces": {
+				"north": {"uv": [5, 5, 6, 6], "texture": "#1"},
+				"east": {"uv": [4, 4, 8, 5], "texture": "#1"},
+				"south": {"uv": [2, 3, 3, 4], "texture": "#1"},
+				"west": {"uv": [4, 4, 8, 5], "texture": "#1"},
+				"up": {"uv": [5, 4, 6, 8], "texture": "#1"},
+				"down": {"uv": [7, 4, 8, 8], "texture": "#1"}
+			}
+		}
+	]
+}

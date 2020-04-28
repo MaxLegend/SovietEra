@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:po2_up", "y": 90},
+        "facing=west":  { "model": "soviet:po2_up", "y": 270},
+        "facing=south": { "model": "soviet:po2_up", "y": 180 },
+        "facing=north": { "model": "soviet:po2_up", "y": 0 }
+    }
+}

@@ -1,0 +1,8 @@
+{
+"variants": {
+"facing=north": {"model": "soviet:lift_up", "y": 270},
+"facing=south": { "model": "soviet:lift_up", "y": 90},
+"facing=east": { "model": "soviet:lift_up"},
+"facing=west": { "model": "soviet:lift_up", "y": 180}
+}
+}

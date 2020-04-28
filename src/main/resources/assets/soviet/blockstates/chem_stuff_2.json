@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:chem_stuff_2", "y": 270},
+        "facing=west":  { "model": "soviet:chem_stuff_2", "y": 90},
+        "facing=south": { "model": "soviet:chem_stuff_2", "y": 0 },
+        "facing=north": { "model": "soviet:chem_stuff_2", "y": 180 }
+    }
+}

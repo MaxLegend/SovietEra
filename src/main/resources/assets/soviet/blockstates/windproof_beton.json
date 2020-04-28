@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:windproof_beton", "y": 90},
+        "facing=west":  { "model": "soviet:windproof_beton", "y": 270},
+        "facing=south": { "model": "soviet:windproof_beton", "y": 180 },
+        "facing=north": { "model": "soviet:windproof_beton", "y": 0 }
+    }
+}

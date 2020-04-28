@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:alkofire", "y": 270},
+        "facing=west":  { "model": "soviet:alkofire", "y": 90},
+        "facing=south": { "model": "soviet:alkofire", "y": 0 },
+        "facing=north": { "model": "soviet:alkofire", "y": 180 }
+    }
+}

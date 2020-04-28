@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:statue_lenin", "y": 90},
+        "facing=west":  { "model": "soviet:statue_lenin", "y": 270},
+        "facing=south": { "model": "soviet:statue_lenin", "y": 180 },
+        "facing=north": { "model": "soviet:statue_lenin", "y": 0 }
+    }
+}

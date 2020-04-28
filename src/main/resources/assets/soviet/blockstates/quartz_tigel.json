@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:quartz_tigel", "y": 90},
+        "facing=west":  { "model": "soviet:quartz_tigel", "y": 270},
+        "facing=south": { "model": "soviet:quartz_tigel", "y": 180 },
+        "facing=north": { "model": "soviet:quartz_tigel", "y": 0 }
+    }
+}

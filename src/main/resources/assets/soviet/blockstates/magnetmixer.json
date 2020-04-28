@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:magnetmixer", "y": 270},
+        "facing=west":  { "model": "soviet:magnetmixer", "y": 90},
+        "facing=south": { "model": "soviet:magnetmixer", "y": 0 },
+        "facing=north": { "model": "soviet:magnetmixer", "y": 180 }
+    }
+}
+

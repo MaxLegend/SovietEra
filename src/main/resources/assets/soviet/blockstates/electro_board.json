@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:electro_board", "y": 90},
+        "facing=west":  { "model": "soviet:electro_board", "y": 270},
+        "facing=south": { "model": "soviet:electro_board", "y": 180 },
+        "facing=north": { "model": "soviet:electro_board", "y": 0 }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "multipart": [
+        {   "when": { "default": "true" },
+            "apply": { "model": "soviet:table_full" }
+        },
+        {   "when": { "north": "true" },
+            "apply": { "model": "soviet:table_north", "uvlock": true }
+        },
+        {   "when": { "east": "true" },
+            "apply": { "model": "soviet:table_east", "uvlock": true }
+        },
+ 	{   "when": { "west": "true" },
+            "apply": { "model": "soviet:table_west", "uvlock": true }
+        },
+  	{   "when": { "center": "true" },
+            "apply": { "model": "soviet:table_center", "uvlock": true }
+        },
+        {   "when": { "south": "true" },
+            "apply": { "model": "soviet:table_south","uvlock": true }
+        }
+    ]
+}

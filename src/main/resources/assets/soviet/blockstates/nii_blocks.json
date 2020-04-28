@@ -1,0 +1,8 @@
+{
+  "variants": {
+"variant=nii_wall_2": { "model": "soviet:nii_wall_2" },
+"variant=nii_floor_1": { "model": "soviet:nii_floor_1" },
+"variant=nii_wall_3": { "model": "soviet:nii_wall_3" },
+"variant=nii_wall_4": { "model": "soviet:nii_wall_4" }
+  }
+}

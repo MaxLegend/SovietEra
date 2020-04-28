@@ -1,0 +1,10 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:sink", "y": 90},
+        "facing=west":  { "model": "soviet:sink", "y": 270},
+        "facing=south": { "model": "soviet:sink", "y": 180 },
+        "facing=north": { "model": "soviet:sink", "y": 0 }
+    }
+}
+
