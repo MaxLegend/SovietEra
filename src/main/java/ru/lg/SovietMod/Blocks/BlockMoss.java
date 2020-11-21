@@ -11,6 +11,7 @@ import net.minecraft.block.BlockPistonExtension;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -33,8 +34,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockMoss extends BlockDirectional {
 	
-	
-	
+	public static final PropertyBool DEF = PropertyBool.create("default");
+	public static final PropertyBool NORTH = PropertyBool.create("north");
+	public static final PropertyBool EAST = PropertyBool.create("east");
+	public static final PropertyBool SOUTH = PropertyBool.create("south");
+	public static final PropertyBool WEST = PropertyBool.create("west");
+	public static final PropertyBool DOWN = PropertyBool.create("down");
+	public static final PropertyBool UP = PropertyBool.create("up");
 	
 	public BlockMoss(final Material materialIn, final String name, float hardness,float resistanse, SoundType soundtype,CreativeTabs cTab) {
 		super(Material.GRASS);
@@ -165,7 +171,6 @@ public class BlockMoss extends BlockDirectional {
 
         return i;
     }
-
 
 
 	protected BlockStateContainer createBlockState()

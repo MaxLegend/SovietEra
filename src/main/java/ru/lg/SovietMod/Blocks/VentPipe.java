@@ -47,8 +47,7 @@ public class VentPipe extends Block
 		this.setUnlocalizedName(name);
 		this.setHardness(hardness);
         this.setDefaultState(this.blockState.getBaseState().withProperty(DEFAULT, Boolean.valueOf(false)));
-        
-        this.setCreativeTab(SovietCore.tabMain);
+
     }
 
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)

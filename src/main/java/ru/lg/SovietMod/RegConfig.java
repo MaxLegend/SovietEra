@@ -12,6 +12,7 @@ public class RegConfig
    public static int chanceGeneration1;
    public static int chanceGeneration2;
    public static boolean enableLabGenerator;
+   public static boolean enableLumpSound;
 //   public static float volume_change_megalamp;
 //   public static float volume_change_sovietlamp;
 
@@ -22,6 +23,7 @@ public class RegConfig
        chanceGeneration1 = config.getInt("chanceGeneration1", "World gens", 20, 2, 100,  "config.chanceGeneration1", "config.chanceGeneration1.name");
        chanceGeneration2 = config.getInt("chanceGeneration2", "World gens", 18, 4, 100, "config.chanceGeneration2", "config.chanceGeneration2.name");
        enableLabGenerator = config.getBoolean("enableGeneration", "Customization", true, "config.debugGeneration", "config.debugGeneration.name");
+       enableLumpSound = config.getBoolean("enableLumpSound", "Customization", true, "config.enableLumpSound", "config.enableLumpSound.name");
 
       // volume_change_megalamp = config.getFloat("vol_megalamp", "blocks", 3.0F, 0.5F, 5.0F, I18n.translateToLocal("config.vol_megalamp"), "config.vol_megalamp.name");
     //   volume_change_sovietlamp = config.getFloat("vol_sovietlamp", "blocks", 3.0F, 0.5F, 5.0F, I18n.translateToLocal("config.vol_sovietlamp"), "config.vol_sovietlamp.name");

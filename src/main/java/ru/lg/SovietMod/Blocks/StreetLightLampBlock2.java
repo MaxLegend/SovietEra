@@ -15,7 +15,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import ru.lg.SovietMod.RegBlocks;
 import ru.lg.SovietMod.RegSounds;
-import ru.lg.SovietMod.StreetLightBlock;
 
 public class StreetLightLampBlock2 extends StreetLightBlock {
 	private boolean isOn;

@@ -19,7 +19,7 @@ public class ItemWallTile1 extends Item
 	public ItemWallTile1(String name, Class <? extends EntityHanging > entityClass)
 	{
 		this.hangingEntityClass = entityClass;
-		this.setCreativeTab(SovietCore.tabMain);
+		this.setCreativeTab(SovietCore.tabInsDeco);
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
 

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "soviet:physical/accl_tile" }
+  }
+}

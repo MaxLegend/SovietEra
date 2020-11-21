@@ -19,7 +19,7 @@ public class ItemRedBanner extends Item
 	public ItemRedBanner(String name, Class <? extends EntityHanging > entityClass)
 	{
 		this.hangingEntityClass = entityClass;
-		this.setCreativeTab(SovietCore.tabMain);
+		
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
 	}

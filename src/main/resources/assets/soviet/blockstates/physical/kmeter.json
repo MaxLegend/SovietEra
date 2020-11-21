@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:physical/kmeter", "y": 270},
+        "facing=west":  { "model": "soviet:physical/kmeter", "y": 90},
+        "facing=south": { "model": "soviet:physical/kmeter", "y": 0 },
+        "facing=north": { "model": "soviet:physical/kmeter", "y": 180 }
+    }
+}

@@ -110,7 +110,7 @@ public class HammerEvent {
 			}
 		}
 	}
-	@SubscribeEvent
+//	@SubscribeEvent
 	public void onDrop(BlockEvent.HarvestDropsEvent event) {		
 		EntityPlayer player = (EntityPlayer)event.getHarvester();
 		if(!event.getWorld().isRemote) { 	

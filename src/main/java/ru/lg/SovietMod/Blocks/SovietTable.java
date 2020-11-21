@@ -81,7 +81,10 @@ public class SovietTable extends BasicBlock {
 	{
 		return false;
 	}
-
+    public boolean isTopSolid(IBlockState state)
+    {
+        return true;
+    }
 	public boolean isOpaqueCube(IBlockState state)
 	{
 		return false;
@@ -89,7 +92,7 @@ public class SovietTable extends BasicBlock {
 	@Override
 
 	public boolean isFullCube(IBlockState state) {
-		return true;
+		return false;
 	}
     public EnumBlockRenderType getRenderType(IBlockState state)
     {

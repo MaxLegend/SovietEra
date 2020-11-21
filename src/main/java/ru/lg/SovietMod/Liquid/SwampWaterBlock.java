@@ -21,6 +21,7 @@ public class SwampWaterBlock extends BlockFluidClassic
        super(fluid, Material.WATER);
   
        setUnlocalizedName(name);
+       setCreativeTab(SovietCore.tabItems);
        setRegistryName(name);
    }
    

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:physical/copper_rings", "y": 270},
+        "facing=west":  { "model": "soviet:physical/copper_rings", "y": 90},
+        "facing=south": { "model": "soviet:physical/copper_rings", "y": 0 },
+        "facing=north": { "model": "soviet:physical/copper_rings", "y": 180 }
+    }
+}

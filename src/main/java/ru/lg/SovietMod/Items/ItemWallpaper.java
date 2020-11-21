@@ -19,7 +19,7 @@ public class ItemWallpaper extends Item
 	public ItemWallpaper(String name, Class <? extends EntityHanging > entityClass)
 	{
 		this.hangingEntityClass = entityClass;
-		this.setCreativeTab(SovietCore.tabMain);
+	
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
 	}

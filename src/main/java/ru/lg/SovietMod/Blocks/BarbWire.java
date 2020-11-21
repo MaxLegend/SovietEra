@@ -42,7 +42,7 @@ public class BarbWire extends Block
 		this.setUnlocalizedName(name);
 		this.setHardness(hardness);
         this.setDefaultState(this.blockState.getBaseState().withProperty(DEFAULT, Boolean.valueOf(false)));
-        this.setCreativeTab(SovietCore.tabMain);
+
     }
     public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
     {

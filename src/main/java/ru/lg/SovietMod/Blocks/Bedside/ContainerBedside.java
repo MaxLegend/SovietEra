@@ -16,11 +16,11 @@ public class ContainerBedside extends Container
 
        int index = 0;
 
-       for (j = 0; j < 2; ++j)
+       for (j = 0; j < 3; ++j)
        {
            for (k = 0; k < 3; ++k)
            {
-               addSlotToContainer(new Slot(watcher.basic, index++, 63 + k * 18, 17 + j * 18));
+               addSlotToContainer(new Slot(watcher.basic, index++, 62 + k * 18, 11 + j * 18));
            }
        }
 

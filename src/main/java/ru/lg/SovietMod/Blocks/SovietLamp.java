@@ -20,6 +20,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import ru.lg.SovietMod.RegBlocks;
+import ru.lg.SovietMod.RegConfig;
 import ru.lg.SovietMod.RegSounds;
 import ru.lg.SovietMod.SovietCore;
 import ru.lg.SovietMod.Blocks.Basic.BasicBlockSideWithCustomModel;
@@ -53,7 +54,9 @@ public class SovietLamp extends BasicBlockSideWithCustomModel {
 	{
 
 		if(worldIn.isRemote) {
-			worldIn.playSound(pos.getX(), pos.getY(), pos.getZ(),  RegSounds.enablelump, SoundCategory.BLOCKS, 0.7F, 1.0F, true);
+			if(RegConfig.enableLumpSound) {
+				worldIn.playSound(pos.getX(), pos.getY(), pos.getZ(),  RegSounds.enablelump, SoundCategory.BLOCKS, 0.7F, 1.0F, true);
+			}
 		}
 		if (!worldIn.isRemote)
 		{
@@ -91,77 +94,77 @@ public class SovietLamp extends BasicBlockSideWithCustomModel {
 	{
 		if (!worldIn.isRemote)
 		{
-			worldIn.playSound(null, pos,  RegSounds.enablelump, SoundCategory.BLOCKS, 0.7F, 1.0F);
+			//	worldIn.playSound(null, pos,  RegSounds.enablelump, SoundCategory.BLOCKS, 0.01F, 1.0F);
+
 			Block neighbor = worldIn.getBlockState(fromPos).getBlock();
 
 			if(neighbor instanceof IncLamp || neighbor instanceof SovietLamp|| neighbor instanceof RedLamp) {
 				return;
 			} else {
+				if(worldIn.isBlockPowered(pos)) {
+					isOn = true;
+					worldIn.setBlockState(pos, RegBlocks.sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING)));
+				}
+				if(!worldIn.isBlockPowered(pos)) {
+					isOn = false;
+					worldIn.setBlockState(pos, RegBlocks.sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING)));
+				}
+			}
+		}
+	}
+
+	@Override
+	public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)
+	{
+		if(worldIn.getBlockState(pos) == RegBlocks.sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
+			this.isOn = false;
 			if(worldIn.isBlockPowered(pos)) {
 				isOn = true;
-				worldIn.setBlockState(pos, RegBlocks.sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING)));
 			}
-			if(!worldIn.isBlockPowered(pos)) {
+		}
+		if(worldIn.getBlockState(pos) == RegBlocks.sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
+			this.isOn = true;
+			if(worldIn.isBlockPowered(pos)) {
 				isOn = false;
-				worldIn.setBlockState(pos, RegBlocks.sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING)));
-			}
 			}
 		}
+		worldIn.scheduleBlockUpdate(pos, this, 35, 0);
 	}
 
-
-
-@Override
-public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)
-{
-	if(worldIn.getBlockState(pos) == RegBlocks.sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
-		this.isOn = false;
-		if(worldIn.isBlockPowered(pos)) {
-			isOn = true;
-		}
-	}
-	if(worldIn.getBlockState(pos) == RegBlocks.sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
-		this.isOn = true;
-		if(worldIn.isBlockPowered(pos)) {
-			isOn = false;
-		}
-	}
-	worldIn.scheduleBlockUpdate(pos, this, 35, 0);
-}
-
-@Override
-public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
-{
-
-	worldIn.scheduleBlockUpdate(pos, this, 35, 0);
-	if(!worldIn.isRemote) {
-		if(isOn)
-		{
-			worldIn.playSound(null,pos, RegSounds.buzzlump, SoundCategory.BLOCKS, 0.9F, 1.0F);
-		}
-		if(isOn && worldIn.isBlockPowered(pos)) {
-			worldIn.playSound(null,pos, RegSounds.buzzlump, SoundCategory.BLOCKS, 0.9F, 1.0F);
-
-		}
-	}
-
-
-}
-
-@Override
-public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
-{
-	switch (state.getValue(FACING))
+	@Override
+	public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
 	{
-	case SOUTH:
-		return this.SIDE_AABB[0];
-	case NORTH:
-	default:
-		return this.SIDE_AABB[1];
-	case WEST:
-		return this.SIDE_AABB[2];
-	case EAST:
-		return this.SIDE_AABB[3];
+		if(RegConfig.enableLumpSound) {
+			worldIn.scheduleBlockUpdate(pos, this, 40, 0);
+			if(!worldIn.isRemote) {
+				if(isOn)
+				{
+					worldIn.playSound(null,pos, RegSounds.buzzlump, SoundCategory.BLOCKS, 0.7F, 1F);
+				}
+				if(isOn && worldIn.isBlockPowered(pos)) {
+					worldIn.playSound(null,pos, RegSounds.buzzlump, SoundCategory.BLOCKS, 0.6F, 1.0F);
+
+				}
+			}
+		}
+
+
 	}
-}
+
+	@Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+	{
+		switch (state.getValue(FACING))
+		{
+		case SOUTH:
+			return this.SIDE_AABB[0];
+		case NORTH:
+		default:
+			return this.SIDE_AABB[1];
+		case WEST:
+			return this.SIDE_AABB[2];
+		case EAST:
+			return this.SIDE_AABB[3];
+		}
+	}
 }

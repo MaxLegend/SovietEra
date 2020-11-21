@@ -19,7 +19,7 @@ public class ItemDspPanel1 extends Item
 	public ItemDspPanel1(String name, Class <? extends EntityHanging > entityClass)
 	{
 		this.hangingEntityClass = entityClass;
-		this.setCreativeTab(SovietCore.tabMain);
+
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
 	}

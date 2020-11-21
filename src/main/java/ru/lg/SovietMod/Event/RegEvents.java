@@ -2,7 +2,6 @@ package ru.lg.SovietMod.Event;
 
 import net.minecraftforge.common.MinecraftForge;
 import ru.lg.SovietMod.RegRenderMetaBlocks;
-import ru.lg.SovietMod.RegSounds;
 
 public class RegEvents {
 
@@ -19,7 +18,8 @@ public class RegEvents {
 
 	public static class Server {
 		public Server() {
-		
+			
+			
 			 register(new CheckMossEvent());
 			 register(new HammerEvent());
 		}

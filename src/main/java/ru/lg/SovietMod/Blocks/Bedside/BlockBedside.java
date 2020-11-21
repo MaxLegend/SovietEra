@@ -17,7 +17,6 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
-import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -31,12 +30,6 @@ public class BlockBedside extends BlockContainer
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
 
-	private static AxisAlignedBB[] SIDE_AABB = new AxisAlignedBB[] {
-			new AxisAlignedBB(0D, 0D, 0D, 1D, 0.75D, 1D),
-			new AxisAlignedBB(0D, 0D, 0D, 1D, 0.75D, 1D),
-			new AxisAlignedBB(0D, 0D, 0D, 1D, 0.75D, 1D),
-			new AxisAlignedBB(0D, 0D, 0D, 1D, 0.75D, 1D)
-	};
 
 	public BlockBedside(String name)
 	{
@@ -63,22 +56,7 @@ public class BlockBedside extends BlockContainer
 	public boolean isFullCube(IBlockState state) {
 		return false;
 	}
-	@Override
-	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
-	{
-		switch (state.getValue(FACING))
-		{
-		case SOUTH:
-			return this.SIDE_AABB[0];
-		case NORTH:
-		default:
-			return this.SIDE_AABB[1];
-		case WEST:
-			return this.SIDE_AABB[2];
-		case EAST:
-			return this.SIDE_AABB[3];
-		}
-	}
+
 	@Override
 	public IBlockState withRotation(IBlockState state, Rotation rot)
 	{

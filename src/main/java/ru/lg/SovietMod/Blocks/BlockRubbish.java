@@ -26,7 +26,7 @@ public class BlockRubbish extends BasicBlockSideWithCustomModel{
 	};
 	public BlockRubbish(Material materialIn, String name, float hardness, float resistanse, SoundType soundtype) {
 		super(materialIn, name, hardness, resistanse, soundtype);
-		this.setCreativeTab(SovietCore.tabMain);
+		
 	}
     @Nullable
     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)

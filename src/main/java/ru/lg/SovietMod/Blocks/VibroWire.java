@@ -71,7 +71,7 @@ public class VibroWire extends Block{
 		//	this.isPoweredBlock = isPowered;
 		this.setDefaultState(this.blockState.getBaseState().withProperty(isDEF, Boolean.valueOf(true))
 				.withProperty(FACING, EnumFacing.NORTH).withProperty(isL, Boolean.valueOf(false)).withProperty(isR, Boolean.valueOf(false)).withProperty(POWERED, false));
-		this.setCreativeTab(SovietCore.tabMain);
+
 	}
 	@Override
 	public IBlockState withRotation(IBlockState state, Rotation rot)

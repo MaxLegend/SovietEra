@@ -15,7 +15,7 @@ public class TileEntityBedside extends TileEntity
 
    public TileEntityBedside()
    {
-       basic = new InventoryBasic("bedsideTile", false, 6);
+       basic = new InventoryBasic("bedsideTile", false, 9);
    }
 
    @Override

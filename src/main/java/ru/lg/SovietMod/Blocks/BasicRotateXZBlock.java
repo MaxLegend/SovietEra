@@ -1,9 +1,6 @@
 package ru.lg.SovietMod.Blocks;
 
-import javax.annotation.Nullable;
-
 import net.minecraft.block.Block;
-
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -20,14 +17,16 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import ru.lg.SovietMod.SovietCore;
-import ru.lg.SovietMod.Blocks.Basic.BasicBlock;
 
-public class BasicRotateXZBlock extends BasicBlock
+public class BasicRotateXZBlock extends Block
 {
 	public BasicRotateXZBlock(Material materialIn, String name, float hardness, float resistanse, SoundType soundtype) {
-		super(materialIn, name, hardness, resistanse, soundtype);
-		this.setCreativeTab(SovietCore.tabMain);
+		super(materialIn);
+		this.setRegistryName(name);
+		this.setUnlocalizedName(name);
+		this.setSoundType(soundtype);
+		this.setHardness(hardness);
+		this.setResistance(resistanse);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, BasicRotateXZBlock.EnumOrientation.NORTH));
 	}
 

@@ -50,4 +50,16 @@ public class LabGlassCase extends BasicBlockSideWithCustomModel{
 				}
 			}
 		}
+		@Override
+		public void breakBlock(World world, BlockPos pos, IBlockState state)
+		{
+			if (!world.isRemote)
+			{
+				for(EnumFacing f : EnumFacing.HORIZONTALS) {
+					if(world.getBlockState(pos.offset(f)) == RegBlocks.fantom_slabd.getDefaultState()) {
+						world.destroyBlock(pos.offset(f), false);
+					}
+				}
+			}
+		}
 }

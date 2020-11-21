@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "axis=y,level=0":  { "model": "soviet:rusty_barrel" },
+        "axis=z,level=0":   { "model": "soviet:rusty_barrel", "x": 90 },
+        "axis=x,level=0":   { "model": "soviet:rusty_barrel", "x": 90, "y": 90 },
+        "axis=none,level=0": { "model": "soviet:rusty_barrel" },
+        "axis=y,level=1":  { "model": "soviet:rusty_barrel" },
+        "axis=z,level=1":   { "model": "soviet:rusty_barrel", "x": 90 },
+        "axis=x,level=1":   { "model": "soviet:rusty_barrel", "x": 90, "y": 90 },
+        "axis=none,level=1": { "model": "soviet:rusty_barrel" },
+    "axis=y,level=2":  { "model": "soviet:rusty_barrel" },
+        "axis=z,level=2":   { "model": "soviet:rusty_barrel", "x": 90 },
+        "axis=x,level=2":   { "model": "soviet:rusty_barrel", "x": 90, "y": 90 },
+        "axis=none,level=2": { "model": "soviet:rusty_barrel" },
+    "axis=y,level=3":  { "model": "soviet:rusty_barrel" },
+        "axis=z,level=3":   { "model": "soviet:rusty_barrel", "x": 90 },
+        "axis=x,level=3":   { "model": "soviet:rusty_barrel", "x": 90, "y": 90 },
+        "axis=none,level=3": { "model": "soviet:rusty_barrel" }
+    }
+}

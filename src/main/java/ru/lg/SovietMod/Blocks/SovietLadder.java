@@ -17,7 +17,7 @@ public class SovietLadder extends BlockLadder {
 	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(SovietCore.tabMain);
+		
 	}
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {

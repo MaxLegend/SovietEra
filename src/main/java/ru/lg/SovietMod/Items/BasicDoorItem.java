@@ -23,7 +23,7 @@ public class BasicDoorItem extends ItemDoor {
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 		  this.block = block;
-		this.setCreativeTab(SovietCore.tabMain);
+		this.setCreativeTab(SovietCore.tabOutDeco);
 	}
 	  public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
 	    {

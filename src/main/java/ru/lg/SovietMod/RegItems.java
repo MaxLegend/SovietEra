@@ -38,7 +38,9 @@ public class RegItems
 //	public static Item item_record_hymn_ussr = new ItemSovietRecord("item_record_hymn_ussr","item_record_hymn_ussr", RegSounds.hymnussr);
 //	public static Item item_record_stalker_mt = new ItemSovietRecord("item_record_stalker_mt","item_record_stalker_mt", RegSounds.stalkertheme);
 
-	public static Item soviet_bed_item = new SovietBedItem("soviet_bed_item", 1, SovietCore.tabMain);
+
+	
+	public static Item soviet_bed_item = new SovietBedItem("soviet_bed_item", 1, SovietCore.tabInsDeco);
 	
 	public static Item armature = new BasicItem("armature", 64, SovietCore.tabItems);
 	public static Item tile = new BasicItem("tile", 64, SovietCore.tabItems);
@@ -67,19 +69,20 @@ public class RegItems
 	public static Item item_walltile_1 = new ItemWallTile1("walltile_1", EntityWallTile1.class);
 	public static Item item_walltile_2 = new ItemWallTile2("walltile_2", EntityWallTile2.class);
 	
-	public static Item item_wallpaper_1 = new ItemWallpaper("wallpaper_1", EntityWallpaper.class);
-	public static Item item_wallpaper_2 = new ItemWallpaper2("wallpaper_2", EntityWallpaper2.class);
-	public static Item item_wallpaper_3 = new ItemWallpaper3("wallpaper_3", EntityWallpaper3.class);
-	public static Item item_wallpaper_4 = new ItemWallpaper4("wallpaper_4", EntityWallpaper4.class);
-	public static Item item_wallpaper_5 = new ItemWallpaper5("wallpaper_5", EntityWallpaper5.class);
+	public static Item item_wallpaper_1 = new ItemWallpaper("wallpaper_1", EntityWallpaper.class).setCreativeTab(SovietCore.tabInsDeco);
+	public static Item item_wallpaper_2 = new ItemWallpaper2("wallpaper_2", EntityWallpaper2.class).setCreativeTab(SovietCore.tabInsDeco);
+	public static Item item_wallpaper_3 = new ItemWallpaper3("wallpaper_3", EntityWallpaper3.class).setCreativeTab(SovietCore.tabInsDeco);
+	public static Item item_wallpaper_4 = new ItemWallpaper4("wallpaper_4", EntityWallpaper4.class).setCreativeTab(SovietCore.tabInsDeco);
+	public static Item item_wallpaper_5 = new ItemWallpaper5("wallpaper_5", EntityWallpaper5.class).setCreativeTab(SovietCore.tabInsDeco);
 	
-	public static Item item_dsp_panel_1 = new ItemDspPanel1("item_dsp_panel_1", EntityDspPanel1.class);
+	public static Item item_dsp_panel_1 = new ItemDspPanel1("item_dsp_panel_1", EntityDspPanel1.class).setCreativeTab(SovietCore.tabInsDeco);
 	
 	
-	public static Item item_red_banner = new ItemRedBanner("item_red_banner", EntityRedBanner.class);
-	public static Item item_wall_carpet = new ItemWallCarpet("item_wall_carpet", EntityWallCarpet.class);
+	public static Item item_red_banner = new ItemRedBanner("item_red_banner", EntityRedBanner.class).setCreativeTab(SovietCore.tabInsDeco);
+	public static Item item_wall_carpet = new ItemWallCarpet("item_wall_carpet", EntityWallCarpet.class).setCreativeTab(SovietCore.tabInsDeco);
 
 	public static void register() {
+//		registerItem(swamp_water_bucket);
 		registerItem(soviet_bed_item);
 		registerItem(rusty_iron_door_item);
 		registerItem(alm_door_item);
@@ -112,6 +115,8 @@ public class RegItems
 		registerItem(item_red_banner);
 	}
 	public static void registerRender() {
+		
+//		registerRenderItem(swamp_water_bucket);
 		registerRenderItem(soviet_bed_item);
 		registerRenderItem(rusty_iron_door_item);
 		registerRenderItem(hermodoor_item);

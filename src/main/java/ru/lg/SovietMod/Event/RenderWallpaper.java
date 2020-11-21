@@ -60,7 +60,7 @@ public class RenderWallpaper {
 		CoordSaveData data = (CoordSaveData) storage.getOrLoadData(CoordSaveData.class, DATA_NAME);
 		event.getWorld().getMapStorage().getOrLoadData(CoordSaveData.class, DATA_NAME);
 		
-		if (data == null) {
+		if (data == null) { 
 			data = new CoordSaveData(DATA_NAME);
 			event.getWorld().getMapStorage().setData(DATA_NAME, data);
 		}

@@ -20,7 +20,7 @@ public class BlockPipes extends BasicBlockSideWithCustomModel{
 	};
 	public BlockPipes(Material materialIn, String name, float hardness, float resistanse, SoundType soundtype) {
 		super(materialIn, name, hardness, resistanse, soundtype);
-		this.setCreativeTab(SovietCore.tabMain);
+
 	}
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)

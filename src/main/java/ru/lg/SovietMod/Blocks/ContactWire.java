@@ -69,7 +69,7 @@ public class ContactWire extends Block{
 		//	this.setTickRandomly(true);
 		//	this.isPoweredBlock = isPowered;
 		this.setDefaultState(this.blockState.getBaseState().withProperty(isDEF, Boolean.valueOf(true)).withProperty(FACING, EnumFacing.NORTH).withProperty(isL, Boolean.valueOf(false)).withProperty(isR, Boolean.valueOf(false)).withProperty(IS_ACTIVE, false));
-		this.setCreativeTab(SovietCore.tabMain);
+		
 	}
 	@Override
 	public IBlockState withRotation(IBlockState state, Rotation rot)

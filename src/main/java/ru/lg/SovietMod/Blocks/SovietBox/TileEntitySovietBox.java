@@ -1,63 +1,173 @@
 package ru.lg.SovietMod.Blocks.SovietBox;
 
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.Container;
-import net.minecraft.inventory.InventoryBasic;
+import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
-import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityLockableLoot;
+import net.minecraft.util.ITickable;
+import net.minecraft.util.NonNullList;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.math.AxisAlignedBB;
+import ru.lg.SovietMod.SovietCore;
 
-public class TileEntitySovietBox extends TileEntity
+public class TileEntitySovietBox extends TileEntityLockableLoot implements ITickable
 {
-   public InventoryBasic basic;
+	private NonNullList<ItemStack> chestContents = NonNullList.<ItemStack>withSize(16, ItemStack.EMPTY);
+	public int numPlayersUsing, ticksSinceSync;
+	public float lidAngle, prevLidAngle;
+	
+	@Override
+	public int getSizeInventory()
+	{
+		return 16;
+	}
+	
+	@Override
+	public int getInventoryStackLimit() 
+	{
+		return 64;
+	}
+	
+	@Override
+	public boolean isEmpty()
+	{
+		for(ItemStack stack : this.chestContents)
+		{
+			if(!stack.isEmpty()) return false;
+		}
+		
+		return true;
+	}
+	
+	@Override
+	public String getName() 
+	{
+		return this.hasCustomName() ? this.customName : "container.copper_chest";
+	}
+	
+	@Override
+	public void readFromNBT(NBTTagCompound compound)
+	{
+		super.readFromNBT(compound);
+		this.chestContents = NonNullList.<ItemStack>withSize(this.getSizeInventory(), ItemStack.EMPTY);
+		
+		if(!this.checkLootAndRead(compound)) ItemStackHelper.loadAllItems(compound, chestContents);
+		if(compound.hasKey("CustomName", 8)) this.customName = compound.getString("CustomName");
+	}
+	
+	@Override
+	public NBTTagCompound writeToNBT(NBTTagCompound compound)
+	{
+		super.writeToNBT(compound);
+		
+		if(!this.checkLootAndWrite(compound)) ItemStackHelper.saveAllItems(compound, chestContents);
+		if(compound.hasKey("CustomName", 8)) compound.setString("CustomName", this.customName);
+		
+		return compound;
+	}
+	
+	@Override
+	public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn)  
+	{
+		return new ContainerSovietBox(playerInventory, this, playerIn);
+	}
+	
+	@Override
+	public String getGuiID() 
+	{
+		return SovietCore.MODID + ":copper_chest";
+	}
+	
+	@Override
+	protected NonNullList<ItemStack> getItems() 
+	{
+		return this.chestContents;
+	}
+	
 
-   public TileEntitySovietBox()
-   {
-       basic = new InventoryBasic("SovietBoxTile", false, 16);
-   }
+	
+	@Override
+	public void openInventory(EntityPlayer player)
+	{
+		++this.numPlayersUsing;
+		this.world.addBlockEvent(pos, this.getBlockType(), 1, this.numPlayersUsing);
+		this.world.notifyNeighborsOfStateChange(pos, this.getBlockType(), false);
+	}
+	
+	@Override
+	public void closeInventory(EntityPlayer player) 
+	{
+		--this.numPlayersUsing;
+		this.world.addBlockEvent(pos, this.getBlockType(), 1, this.numPlayersUsing);
+		this.world.notifyNeighborsOfStateChange(pos, this.getBlockType(), false);
+	}
 
-   @Override
-   public NBTTagCompound writeToNBT(NBTTagCompound compound)
-   {
-       super.writeToNBT(compound);
-       NBTTagList list = new NBTTagList();
+	@Override
+	public void update() {
+		if (!this.world.isRemote && this.numPlayersUsing != 0 && (this.ticksSinceSync + pos.getX() + pos.getY() + pos.getZ()) % 200 == 0)
+        {
+            this.numPlayersUsing = 0;
+            float f = 5.0F;
 
-       for(int i = 0; i < this.basic.getSizeInventory(); ++i)
-       {
-           if(this.basic.getStackInSlot(i) != null)
-           {
-               NBTTagCompound tag = new NBTTagCompound();
-               tag.setByte("Slot", (byte) i);
-               this.basic.getStackInSlot(i).writeToNBT(tag);
-               list.appendTag(tag);
-           }
-       }
+            for (EntityPlayer entityplayer : this.world.getEntitiesWithinAABB(EntityPlayer.class, new AxisAlignedBB((double)((float)pos.getX() - 5.0F), (double)((float)pos.getY() - 5.0F), (double)((float)pos.getZ() - 5.0F), (double)((float)(pos.getX() + 1) + 5.0F), (double)((float)(pos.getY() + 1) + 5.0F), (double)((float)(pos.getZ() + 1) + 5.0F))))
+            {
+                if (entityplayer.openContainer instanceof ContainerSovietBox)
+                { 
+                    if (((ContainerSovietBox)entityplayer.openContainer).getChestInventory() == this)
+                    {
+                        ++this.numPlayersUsing;
+                    }
+                }
+            }
+        }
+		
+        this.prevLidAngle = this.lidAngle;
+        float f1 = 0.1F;
 
-       compound.setTag("Items", list);
-       return compound;
-   }
+        if (this.numPlayersUsing > 0 && this.lidAngle == 0.0F)
+        {
+            double d1 = (double)pos.getX() + 0.5D;
+            double d2 = (double)pos.getZ() + 0.5D;
+            this.world.playSound((EntityPlayer)null, d1, (double)pos.getY() + 0.5D, d2, SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN, SoundCategory.BLOCKS, 0.5F, this.world.rand.nextFloat() * 0.1F + 0.9F);
+        }
 
-   public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn)
-   {
-       return new ContainerSovietBox(playerInventory, this);
-   }
-   @Override
-   public void readFromNBT(NBTTagCompound compound)
-   {
-       super.readFromNBT(compound);
-       NBTTagList list = compound.getTagList("Items", 10);
+        if (this.numPlayersUsing == 0 && this.lidAngle > 0.0F || this.numPlayersUsing > 0 && this.lidAngle < 1.0F)
+        {
+            float f2 = this.lidAngle;
 
-       for(int i = 0; i < list.tagCount(); ++i)
-       {
-           NBTTagCompound tag = list.getCompoundTagAt(i);
-           int j = tag.getByte("Slot") & 255;
+            if (this.numPlayersUsing > 0)
+            {
+                this.lidAngle += 0.1F;
+            }
+            else
+            {
+                this.lidAngle -= 0.1F;
+            }
 
-           if(j >= 0 && j < this.basic.getSizeInventory())
-           {
-               this.basic.setInventorySlotContents(j, new ItemStack(tag));
-           }
-       }
-   }
+            if (this.lidAngle > 1.0F)
+            {
+                this.lidAngle = 1.0F;
+            }
+
+            float f3 = 0.5F;
+
+            if (this.lidAngle < 0.5F && f2 >= 0.5F)
+            {
+                double d3 = (double)pos.getX() + 0.5D;
+                double d0 = (double)pos.getZ() + 0.5D;
+                this.world.playSound((EntityPlayer)null, d3, (double)pos.getY() + 0.5D, d0, SoundEvents.BLOCK_IRON_TRAPDOOR_CLOSE, SoundCategory.BLOCKS, 0.5F, this.world.rand.nextFloat() * 0.1F + 0.9F);
+            }
+
+            if (this.lidAngle < 0.0F)
+            {
+                this.lidAngle = 0.0F;
+            }
+        }		
+		
+	}	
 }

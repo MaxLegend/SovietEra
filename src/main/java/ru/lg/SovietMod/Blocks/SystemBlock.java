@@ -16,7 +16,7 @@ public class SystemBlock extends BasicBlockSideWithCustomModel {
 	 protected static final AxisAlignedBB AABB_X = new AxisAlignedBB(0D, 0.0D, 0.25D, 1D, 0.91D, 0.75D);
 	public SystemBlock(Material materialIn, String name, float hardness, float resistanse, SoundType soundtype) {
 		super(materialIn, name, hardness, resistanse, soundtype);
-		setCreativeTab(SovietCore.tabMain);
+
 	}
 	   @Override
 		public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)

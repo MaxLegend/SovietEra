@@ -17,6 +17,9 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import ru.lg.SovietMod.Blocks.Basic.BasicBlockSideWithCustomModel;
 
+
+//Пример из совкомода с таким блоком. Я в зависимости от стейта, пририсовываю еще кубы к баундбоксу. Но просто сделать коллизию мало - нужно еще специально сделать для рейтреса, который чекает рамку на клиенте, 
+// и для серверного рейтрейса, который проверяет столкновение с направлением взгляда игрока.
 public class GofroHandholdAngle extends BasicBlockSideWithCustomModel {
 
 	private static AxisAlignedBB[] SIDE_AABB = new AxisAlignedBB[] {
@@ -30,6 +33,7 @@ public class GofroHandholdAngle extends BasicBlockSideWithCustomModel {
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 
+	//1. Как обычно возвращаем баундбокс для основной части блока. 
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
 	{
@@ -46,25 +50,14 @@ public class GofroHandholdAngle extends BasicBlockSideWithCustomModel {
 			return this.SIDE_AABB[3];
 		}
 	}
-
+//Переопределяем коллизию. Не помню уже почему, но помойму нам это не очень важно. 
 	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)
 	{
 		return this.SIDE_AABB[0];
-		//		switch (blockState.getValue(FACING))
-		//		{
-		//		case SOUTH:
-		//			return this.SIDE_AABB[0];
-		//		case NORTH:
-		//		default:
-		//			return this.SIDE_AABB[1];
-		//		case WEST:
-		//			return this.SIDE_AABB[2];
-		//		case EAST:
-		//			return this.SIDE_AABB[3];
-		//		}
 	}
 	
-	
+	//есть два метода рейтрейса - который проверяет, уткнулся ли блок в баундбокс в целом, и второй, который проверяет, уткнулся ли в коллизионный(серверный) баундбокс. Этот помойму тоже не нужен, он аналогичен ванили.
+	// но если что то работать не будет, про него не забудь.
 	protected RayTraceResult rayTrace(BlockPos pos, Vec3d start, Vec3d end, AxisAlignedBB boundingBox)
 	{
 		Vec3d vec3d = start.subtract((double)pos.getX(), (double)pos.getY(), (double)pos.getZ());
@@ -72,6 +65,8 @@ public class GofroHandholdAngle extends BasicBlockSideWithCustomModel {
 		RayTraceResult raytraceresult = boundingBox.calculateIntercept(vec3d, vec3d1);
 		return raytraceresult == null ? null : new RayTraceResult(raytraceresult.hitVec.addVector((double)pos.getX(), (double)pos.getY(), (double)pos.getZ()), raytraceresult.sideHit, pos);
 	}
+	//Здесь - учитывая что мой блок поворачивается по сторонам света, рейтрейсить каждый раз нужно баундбокс с новой стороны, поэтому сделан массив со всеми вариантами, и которые затем в зависимости от поворота,
+	// рассчитывается рейтрейс
 	@Override
 	public RayTraceResult collisionRayTrace(IBlockState blockState, World world, BlockPos pos, Vec3d start, Vec3d end)
 	{
@@ -84,8 +79,6 @@ public class GofroHandholdAngle extends BasicBlockSideWithCustomModel {
 
 		double d1 = 0.0D;
 
-
-
 		switch (blockState.getValue(FACING))
 		{
 		case SOUTH:
@@ -94,11 +87,9 @@ public class GofroHandholdAngle extends BasicBlockSideWithCustomModel {
 				RayTraceResult rtt = rtr[2];
 				if(rtt != null)
 				{
-
 					double d0 = rtt.hitVec.squareDistanceTo(end);
 					if(d0 > d1)
 					{
-
 						d1 = d0;
 						return rtt;
 					}
@@ -112,7 +103,6 @@ public class GofroHandholdAngle extends BasicBlockSideWithCustomModel {
 					double d0 = rtt.hitVec.squareDistanceTo(end);
 					if(d0 > d1)
 					{
-
 						d1 = d0;
 						return rtt;
 					}
@@ -130,7 +120,6 @@ public class GofroHandholdAngle extends BasicBlockSideWithCustomModel {
 					double d0 = rtt.hitVec.squareDistanceTo(end);
 					if(d0 > d1)
 					{
-
 						d1 = d0;
 						return rtt;
 					}
@@ -140,11 +129,9 @@ public class GofroHandholdAngle extends BasicBlockSideWithCustomModel {
 				RayTraceResult rtt = rtr[3];
 				if(rtt != null)
 				{
-
 					double d0 = rtt.hitVec.squareDistanceTo(end);
 					if(d0 > d1)
 					{
-
 						d1 = d0;
 						return rtt;
 					}
@@ -219,6 +206,9 @@ public class GofroHandholdAngle extends BasicBlockSideWithCustomModel {
 		}
 
 	}
+	
+	// этот метод добавляет коллизионные боксы для каждого из случаев. В случае с нашими бревнами аналогично. То есть, условно - снизу будет дефолтный баундбокс в 0.5 высоты, но нужно еще пририсовать кусочек, который 
+	// будет покрывать бревно которое ложится сверху справа или слева. То есть так как тут не прокатит - нужно сделать отдельную переменную баундбокса и ее тут добавлять в зависимости от стейта. Ну ты понял)
 	public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn, boolean isActualState)
 	{
 		switch (state.getValue(FACING))

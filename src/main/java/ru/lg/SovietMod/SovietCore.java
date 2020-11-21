@@ -4,11 +4,16 @@ import org.apache.logging.log4j.Logger;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.client.model.obj.OBJLoader;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import ru.lg.SovietMod.CreativeTab.InsDecoTab;
+import ru.lg.SovietMod.CreativeTab.ItemsTab;
+import ru.lg.SovietMod.CreativeTab.MainTab;
+import ru.lg.SovietMod.CreativeTab.OutDecoTab;
 import ru.lg.SovietMod.Proxy.CommonProxy;
 
 @Mod(modid = SovietCore.MODID, name = SovietCore.NAME, version = SovietCore.VERSION)
@@ -16,10 +21,13 @@ public class SovietCore
 {
     public static final String MODID = "soviet";
     public static final String NAME = "Soviet Mod";
-    public static final String VERSION = "0.4.1 Custom";
+    public static final String VERSION = "0.5";
 	public static final String[] AUTHORS = new String[] {"LegendGamer"};
 	
 	public static CreativeTabs tabMain = new MainTab("tabMain");
+	public static CreativeTabs tabInsDeco = new InsDecoTab("tabInsDeco");
+	public static CreativeTabs tabOutDeco = new OutDecoTab("tabOutDeco");
+
 	public static CreativeTabs tabItems = new ItemsTab("tabItems");
 	
 	public static CreativeTabs tabSymbols = new SymbolTab("tabSymbols");
@@ -46,7 +54,7 @@ public class SovietCore
     	   proxy.init(event);
     	   RegSounds.init();
     }
-
+  
 
 
 }

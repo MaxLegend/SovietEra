@@ -46,7 +46,7 @@ public class FantomSlabD extends BasicBlock {
 		if (!world.isRemote)
 		{
 			for(EnumFacing facing : LabGlassCase.FACING.getAllowedValues()) {
-				if(world.getBlockState(pos.offset(facing)).getBlock() == RegBlocks.fantom_slabd) {
+				if(world.getBlockState(pos.offset(facing)).getBlock() == RegBlocks.lab_glass_case) {
 					world.destroyBlock(pos.offset(facing), false);
 				}
 			}

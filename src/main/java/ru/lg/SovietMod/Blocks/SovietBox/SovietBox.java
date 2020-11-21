@@ -9,6 +9,7 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -38,7 +39,7 @@ public class SovietBox extends BlockContainer
 		setUnlocalizedName(name);
 		setSoundType(SoundType.WOOD);
 		setHardness(2.0F);
-		setCreativeTab(SovietCore.tabMain);
+
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 	@Override
@@ -94,17 +95,18 @@ public class SovietBox extends BlockContainer
 		return new BlockStateContainer(this, new IProperty[] {FACING});
 	}
 	@Override
-	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ)
+	public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ)
 	{
-		if(!worldIn.isRemote)
-		{
-			TileEntity entity = worldIn.getTileEntity(pos);
-			if(entity instanceof TileEntitySovietBox)
-			{
-				playerIn.openGui(SovietCore.INSTANCE, GuiHandler.GUI_SOVIET_BOX, worldIn, pos.getX(), pos.getY(), pos.getZ());
-			}
+		if (world.isRemote) {
+			return true;
 		}
+		TileEntity te = world.getTileEntity(pos);
+		if (!(te instanceof TileEntitySovietBox)) {
+			return false;
+		} 
+		player.openGui(SovietCore.INSTANCE, GuiHandler.GUI_SOVIET_BOX, world, pos.getX(), pos.getY(), pos.getZ());
 		return true;
+
 	}
 	@Override
 	public boolean isOpaqueCube(IBlockState state)
@@ -117,21 +119,19 @@ public class SovietBox extends BlockContainer
 	{
 		return new TileEntitySovietBox();
 	}
+@Override
+    public void breakBlock(World worldIn, BlockPos pos, IBlockState state)
+    {
+        TileEntity tileentity = worldIn.getTileEntity(pos);
 
-	@Override
-	public void breakBlock(World worldIn, BlockPos pos, IBlockState state)
-	{
-		TileEntity tileEntity = worldIn.getTileEntity(pos);
+        if (tileentity instanceof IInventory)
+        {
+            InventoryHelper.dropInventoryItems(worldIn, pos, (IInventory)tileentity);
+            worldIn.updateComparatorOutputLevel(pos, this);
+        }
 
-		if(tileEntity instanceof TileEntitySovietBox)
-		{
-			TileEntitySovietBox teb = (TileEntitySovietBox) tileEntity;
-			InventoryHelper.dropInventoryItems(worldIn, pos, teb.basic);
-			worldIn.updateComparatorOutputLevel(pos, this);
-		}
-
-		super.breakBlock(worldIn, pos, state);
-	}
+        super.breakBlock(worldIn, pos, state);
+    }
 	@Override
 	public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)
 	{

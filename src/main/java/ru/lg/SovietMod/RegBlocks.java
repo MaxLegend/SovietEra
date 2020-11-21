@@ -10,100 +10,7 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
-import ru.lg.SovietMod.Blocks.AirlockDoor;
-import ru.lg.SovietMod.Blocks.AlumWindow;
-import ru.lg.SovietMod.Blocks.AluminiumDoor;
-import ru.lg.SovietMod.Blocks.Autoclave;
-import ru.lg.SovietMod.Blocks.BarbWire;
-import ru.lg.SovietMod.Blocks.BasicTranslucentBlock;
-import ru.lg.SovietMod.Blocks.Beton_Block;
-import ru.lg.SovietMod.Blocks.BiolabTable;
-import ru.lg.SovietMod.Blocks.BiolabTableUp;
-import ru.lg.SovietMod.Blocks.BlockBattery;
-import ru.lg.SovietMod.Blocks.BlockBeton;
-import ru.lg.SovietMod.Blocks.BlockBetonRalling;
-import ru.lg.SovietMod.Blocks.BlockElectroBoard;
-import ru.lg.SovietMod.Blocks.BlockKafel;
-import ru.lg.SovietMod.Blocks.BlockKeyboard;
-import ru.lg.SovietMod.Blocks.BlockLift;
-import ru.lg.SovietMod.Blocks.BlockMoss;
-import ru.lg.SovietMod.Blocks.BlockPipes;
-import ru.lg.SovietMod.Blocks.BlockRubbish;
-import ru.lg.SovietMod.Blocks.BlockSink;
-import ru.lg.SovietMod.Blocks.BlockToilet;
-import ru.lg.SovietMod.Blocks.BordurBlock;
-import ru.lg.SovietMod.Blocks.ChemStuff;
-import ru.lg.SovietMod.Blocks.ClosedSovietLamp;
-import ru.lg.SovietMod.Blocks.ContactWire;
-import ru.lg.SovietMod.Blocks.ContactWireAngle;
-import ru.lg.SovietMod.Blocks.ContactWireBase;
-import ru.lg.SovietMod.Blocks.DistillApp;
-import ru.lg.SovietMod.Blocks.ElectroStove;
-import ru.lg.SovietMod.Blocks.ElectronikaMonitor;
-import ru.lg.SovietMod.Blocks.FactoryWindow;
-import ru.lg.SovietMod.Blocks.FantomBlock;
-import ru.lg.SovietMod.Blocks.FantomBlockForPO_2;
-import ru.lg.SovietMod.Blocks.FantomSlabD;
-import ru.lg.SovietMod.Blocks.FloorGrid;
-import ru.lg.SovietMod.Blocks.GlassTube;
-import ru.lg.SovietMod.Blocks.GofroHandhold;
-import ru.lg.SovietMod.Blocks.GofroHandholdAngle;
-import ru.lg.SovietMod.Blocks.HermoTrapdoor;
-import ru.lg.SovietMod.Blocks.Hermodoor;
-import ru.lg.SovietMod.Blocks.IncLamp;
-import ru.lg.SovietMod.Blocks.IntroDoors;
-import ru.lg.SovietMod.Blocks.LabGlassCase;
-import ru.lg.SovietMod.Blocks.MagnetMixer;
-import ru.lg.SovietMod.Blocks.MegaLamp;
-import ru.lg.SovietMod.Blocks.Mixer;
-import ru.lg.SovietMod.Blocks.ModernWindow;
-import ru.lg.SovietMod.Blocks.ModernWindowLeaf;
-import ru.lg.SovietMod.Blocks.MotionSensor;
-import ru.lg.SovietMod.Blocks.NIIBlocks;
-import ru.lg.SovietMod.Blocks.PO_2;
-import ru.lg.SovietMod.Blocks.PanelBlockRotate;
-import ru.lg.SovietMod.Blocks.PipeAutoclave;
-import ru.lg.SovietMod.Blocks.QuarzTigel;
-import ru.lg.SovietMod.Blocks.RallingDoor;
-import ru.lg.SovietMod.Blocks.RastyHandhold;
-import ru.lg.SovietMod.Blocks.RastyHandholdAngle;
-import ru.lg.SovietMod.Blocks.RastyRailing;
-import ru.lg.SovietMod.Blocks.RastyRall;
-import ru.lg.SovietMod.Blocks.RedLamp;
-import ru.lg.SovietMod.Blocks.RoadAsphalt;
-import ru.lg.SovietMod.Blocks.RustyIronDoor;
-import ru.lg.SovietMod.Blocks.SlabVertBlock;
-import ru.lg.SovietMod.Blocks.SovietBed;
-import ru.lg.SovietMod.Blocks.SovietChair;
-import ru.lg.SovietMod.Blocks.SovietColumn;
-import ru.lg.SovietMod.Blocks.SovietDoorWood;
-import ru.lg.SovietMod.Blocks.SovietDoorWoodInto;
-import ru.lg.SovietMod.Blocks.SovietLadder;
-import ru.lg.SovietMod.Blocks.SovietLamp;
-import ru.lg.SovietMod.Blocks.SovietLampCracked;
-import ru.lg.SovietMod.Blocks.SovietRelay;
-import ru.lg.SovietMod.Blocks.SovietStairs;
-import ru.lg.SovietMod.Blocks.SovietTable;
-import ru.lg.SovietMod.Blocks.SovietTumb;
-import ru.lg.SovietMod.Blocks.SovietWindow;
-import ru.lg.SovietMod.Blocks.SovietWindowLeaf;
-import ru.lg.SovietMod.Blocks.SteveHelm;
-import ru.lg.SovietMod.Blocks.StreetLight;
-import ru.lg.SovietMod.Blocks.StreetLightLampBlock1;
-import ru.lg.SovietMod.Blocks.StreetLightLampBlock2;
-import ru.lg.SovietMod.Blocks.SystemBlock;
-import ru.lg.SovietMod.Blocks.ThinTubeBattery;
-import ru.lg.SovietMod.Blocks.TurnStileOff;
-import ru.lg.SovietMod.Blocks.TurnStileOn;
-import ru.lg.SovietMod.Blocks.UFLamp;
-import ru.lg.SovietMod.Blocks.UFLampCracked;
-import ru.lg.SovietMod.Blocks.UGRail;
-import ru.lg.SovietMod.Blocks.VentPipe;
-import ru.lg.SovietMod.Blocks.VibroWire;
-import ru.lg.SovietMod.Blocks.VibroWireB;
-import ru.lg.SovietMod.Blocks.VibroWireLever;
-import ru.lg.SovietMod.Blocks.WindProofBeton;
-import ru.lg.SovietMod.Blocks.WiresBlock;
+import ru.lg.SovietMod.Blocks.*;
 import ru.lg.SovietMod.Blocks.Basic.BBSWCMSit;
 import ru.lg.SovietMod.Blocks.Basic.BasicBlock;
 import ru.lg.SovietMod.Blocks.Basic.BasicBlockNoMIP;
@@ -113,12 +20,20 @@ import ru.lg.SovietMod.Blocks.Basic.BasicBlockSideWithCustomModel;
 import ru.lg.SovietMod.Blocks.Basic.BasicBlockSideWithInfo;
 import ru.lg.SovietMod.Blocks.Basic.BasicItemBlock;
 import ru.lg.SovietMod.Blocks.Bedside.BlockBedside;
+import ru.lg.SovietMod.Blocks.DryCab.DryCab;
 import ru.lg.SovietMod.Blocks.ItemBlocks.ItemBlockBeton;
 import ru.lg.SovietMod.Blocks.ItemBlocks.ItemBlockKafel;
 import ru.lg.SovietMod.Blocks.ItemBlocks.ItemBlockNIIBlocks;
+import ru.lg.SovietMod.Blocks.LabTable.LabTable;
+import ru.lg.SovietMod.Blocks.LabTable.LabTableLeft;
+import ru.lg.SovietMod.Blocks.LabTable.LabTableRight;
+import ru.lg.SovietMod.Blocks.Safe.BlockSafe;
 import ru.lg.SovietMod.Blocks.SovietBox.SovietBox;
+import ru.lg.SovietMod.Blocks.SovietTumb.SovietTumb;
+import ru.lg.SovietMod.Blocks.Stillage.StillageBlock;
 import ru.lg.SovietMod.Blocks.TableSide.BlockTableside;
-import ru.lg.SovietMod.Liquid.SwampWaterBlock;
+import ru.lg.SovietMod.Blocks.WoodLabTable.WLabTable;
+import ru.lg.SovietMod.Blocks.WoodLabTable.WLabTableBreak;
 
 public class RegBlocks {
 
@@ -128,45 +43,47 @@ public class RegBlocks {
 	//	public static Block hermodoor = new Hermodoor(Material.WOOD, "hermodoor", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
 
 
-	public static Block swamp_water = new SwampWaterBlock(RegFluids.swamp_water, "swamp_water");
-	public static Block inc_lamp_false = new IncLamp(Material.GLASS, "inc_lamp_false", 0.5F, 1, SoundType.GLASS, false).setCreativeTab(SovietCore.tabMain);
+	//public static Block swamp_water = new SwampWaterBlock(RegFluids.swamp_water, "swamp_water");
+	
+	public static Block inc_lamp_false = new IncLamp(Material.GLASS, "inc_lamp_false", 0.5F, 1, SoundType.GLASS, false).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block inc_lamp_true = new IncLamp(Material.GLASS, "inc_lamp_true", 0.5F, 1, SoundType.GLASS, true);
 
 	//false - down, true - up
-	public static Block po_2_down = new PO_2(Material.ROCK, "po2_down", 6F, 1, SoundType.STONE, false).setCreativeTab(SovietCore.tabMain);
+	public static Block po_2_down = new PO_2(Material.ROCK, "po2_down", 6F, 1, SoundType.STONE, false).setCreativeTab(SovietCore.tabOutDeco);
 	public static Block po_2_up = new PO_2(Material.ROCK, "po2_up", 6F, 1, SoundType.STONE, true);
-	public static Block sovietlamp = new SovietLamp(Material.WOOD, "sovietlamp", 1F, 4F, SoundType.WOOD, false).setCreativeTab(SovietCore.tabMain);
+	public static Block sovietlamp = new SovietLamp(Material.WOOD, "sovietlamp", 1F, 4F, SoundType.WOOD, false).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block sovietlamptrue = new SovietLamp(Material.WOOD, "sovietlamptrue", 1F, 4F, SoundType.WOOD, true);
-	public static Block closed_sovietlamp = new ClosedSovietLamp(Material.WOOD, "closed_sovietlamp", 1F, 4F, SoundType.WOOD, false).setCreativeTab(SovietCore.tabMain);
+	public static Block closed_sovietlamp = new ClosedSovietLamp(Material.WOOD, "closed_sovietlamp", 1F, 4F, SoundType.WOOD, false).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block closed_sovietlamptrue = new ClosedSovietLamp(Material.WOOD, "closed_sovietlamptrue", 1F, 4F, SoundType.WOOD, true);
 
-	public static Block sovietlamp_cracked = new SovietLampCracked(Material.WOOD, "sovietlamp_cracked", 1F, 4F, SoundType.WOOD).setCreativeTab(SovietCore.tabMain);
+	public static Block sovietlamp_cracked = new SovietLampCracked(Material.WOOD, "sovietlamp_cracked", 1F, 4F, SoundType.WOOD).setCreativeTab(SovietCore.tabInsDeco);
 
-	public static Block soviet_table = new SovietTable(Material.WOOD, "soviettable", 2F, 1, SoundType.STONE);
-	public static Block rusty_ralling = new RastyRailing(Material.IRON, "rusty_ralling", 3F, 1, SoundType.METAL);
-	public static Block soviet_selector = new SovietRelay(Material.IRON, "sovietselector", 1F, 1, SoundType.METAL);
-	public static Block vibro_wire_lever = new VibroWireLever(Material.IRON, "vibro_wire_lever", 1F, 1, SoundType.METAL);
+	public static Block soviet_table = new SovietTable(Material.WOOD, "soviettable", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block rusty_ralling = new RastyRailing(Material.IRON, "rusty_ralling", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block soviet_selector = new SovietRelay(Material.IRON, "sovietselector", 1F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block vibro_wire_lever = new VibroWireLever(Material.IRON, "vibro_wire_lever", 1F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 
-	public static Block glass_tube = new GlassTube(Material.GLASS, "glass_tube", 0.5F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
-	public static Block wires = new WiresBlock(Material.CACTUS, "wires", 1F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
-	public static Block rusty_handhold = new RastyHandhold(Material.IRON, "rusty_handhold", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block rusty_handhold_angle = new RastyHandholdAngle(Material.IRON, "rusty_handhold_angle", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block gofro_handhold = new GofroHandhold(Material.IRON, "gofro_handhold", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block beton_block = new Beton_Block(Material.ROCK, "beton_block", 7F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block battery = new BlockBattery(Material.IRON, "battery", 5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block thintube = new ThinTubeBattery(Material.IRON, "thintube", 4F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
+	public static Block glass_tube = new GlassTube(Material.GLASS, "glass_tube", 0.5F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block wires = new WiresBlock(Material.CACTUS, "wires", 1F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	
+	public static Block rusty_handhold = new RastyHandhold(Material.IRON, "rusty_handhold", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block rusty_handhold_angle = new RastyHandholdAngle(Material.IRON, "rusty_handhold_angle", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block gofro_handhold = new GofroHandhold(Material.IRON, "gofro_handhold", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block beton_block = new Beton_Block(Material.ROCK, "beton_block", 7F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block battery = new BlockBattery(Material.IRON, "battery", 5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block thintube = new ThinTubeBattery(Material.IRON, "thintube", 4F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabOutDeco);
 	public static Block beton_with_ralling = new BlockBetonRalling(Material.ROCK, "beton_with_ralling", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
-	//	public static Block beton_with_ralling_side = new BasicBlockSideWithCustomModel(Material.ROCK, "beton_with_ralling_side", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+
 	public static Block green_beton_with_ralling = new BlockBetonRalling(Material.ROCK, "green_beton_with_ralling", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
-	//	public static Block green_beton_with_ralling_side = new BasicBlockSideWithCustomModel(Material.ROCK, "green_beton_with_ralling_side", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
 
-	public static Block full_diagonal_grid = new ThinTubeBattery(Material.IRON, "full_diagonal_grid", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block full_diagonal_grid_invert = new ThinTubeBattery(Material.IRON, "full_diagonal_grid_invert", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block diagonal_grid = new ThinTubeBattery(Material.IRON, "diagonal_grid", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block polu_circle_grid = new ThinTubeBattery(Material.IRON, "polu_circle_grid", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
 
-	public static Block vent_pipe = new VentPipe("vent_pipe", 1F);
-	public static Block barb_wire = new BarbWire("barb_wire", 2F);
+	public static Block full_diagonal_grid = new ThinTubeBattery(Material.IRON, "full_diagonal_grid", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block full_diagonal_grid_invert = new ThinTubeBattery(Material.IRON, "full_diagonal_grid_invert", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block diagonal_grid = new ThinTubeBattery(Material.IRON, "diagonal_grid", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block polu_circle_grid = new ThinTubeBattery(Material.IRON, "polu_circle_grid", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+
+	public static Block vent_pipe = new VentPipe("vent_pipe", 1F).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block barb_wire = new BarbWire("barb_wire", 2F).setCreativeTab(SovietCore.tabOutDeco);
 
 
 	public static Block fantom_block = new FantomBlockForPO_2(Material.ROCK, "fantom_block", 6F, 1, SoundType.STONE);
@@ -176,18 +93,18 @@ public class RegBlocks {
 	//	public static Block fantom_block5 = new FantomSideBlock3(Material.IRON, "fantom_block5", 6F, 1, SoundType.METAL);
 	public static Block fantom_slabd = new FantomSlabD(Material.IRON, "fantom_slabd", 3F, 1, SoundType.METAL);
 
-	public static Block soviet_window = new SovietWindow(Material.WOOD, "soviet_window", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabMain);
-	public static Block soviet_window_leaf = new SovietWindowLeaf(Material.WOOD,"soviet_window_leaf", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabMain);
+	public static Block soviet_window = new SovietWindow(Material.WOOD, "soviet_window", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block soviet_window_leaf = new SovietWindowLeaf(Material.WOOD,"soviet_window_leaf", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabOutDeco);
 
-	public static Block modern_window = new ModernWindow(Material.WOOD, "modern_window", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabMain);
-	public static Block modern_window_leaf = new ModernWindowLeaf(Material.WOOD,"modern_window_leaf", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabMain);
+	public static Block modern_window = new ModernWindow(Material.WOOD, "modern_window", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block modern_window_leaf = new ModernWindowLeaf(Material.WOOD,"modern_window_leaf", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabOutDeco);
 
-	public static Block factory_window = new FactoryWindow(Material.WOOD, "factory_window", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabMain);
+	public static Block factory_window = new FactoryWindow(Material.WOOD, "factory_window", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabOutDeco);
 
 	//public static Block wallpaper_2 = new Wallpaper(Material.ROCK, "wallpaper_2", 4F, 1, SoundType.CLOTH).setCreativeTab(SovietCore.tabMain);
 	//public static Block wallpaper_3 = new Wallpaper(Material.ROCK, "wallpaper_3", 4F, 1, SoundType.CLOTH).setCreativeTab(SovietCore.tabMain);
 
-	public static Block turnstile_off = new TurnStileOff(Material.ROCK, "turnstile_off", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
+	public static Block turnstile_off = new TurnStileOff(Material.ROCK, "turnstile_off", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block turnstile_on = new TurnStileOn(Material.ROCK, "turnstile_on", 2F, 1, SoundType.STONE);
 
 	public static Block hermo_door = new Hermodoor(Material.IRON, "hermodoor", 55F, 1, SoundType.METAL);
@@ -198,15 +115,15 @@ public class RegBlocks {
 	public static Block alm_door = new AluminiumDoor(Material.WOOD, "alm_door", 3F, 1, SoundType.WOOD);
 	public static Block rusty_iron_door = new RustyIronDoor(Material.WOOD, "rusty_iron_door", 3F, 1, SoundType.WOOD);
 
-	public static Block hermo_trapdoor = new HermoTrapdoor(Material.IRON,"hermo_trapdoor", 55F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block hermo_trapdoor = new HermoTrapdoor(Material.IRON,"hermo_trapdoor", 55F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
 	//	public static Block hermo_trapdoor = new HermoTrapDoor(Material.ANVIL,"hermo_trapdoor").setCreativeTab(SovietCore.tabMain);
 
-	public static Block soviet_ladder = new SovietLadder("soviet_ladder");
-	public static Block soviet_ladder2 = new SovietLadder("soviet_ladder2");
+	public static Block soviet_ladder = new SovietLadder("soviet_ladder").setCreativeTab(SovietCore.tabOutDeco);
+	public static Block soviet_ladder2 = new SovietLadder("soviet_ladder2").setCreativeTab(SovietCore.tabOutDeco);
 
 	public static Block white_tilled_block = new BasicBlock(Material.ROCK, "white_tilled_block", 2F, 1, SoundType.STONE);
 
-	public static Block soviet_window_angle = new BasicBlockSideCustomModelWithGlass(Material.ROCK, "soviet_window_angle", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
+	public static Block soviet_window_angle = new BasicBlockSideCustomModelWithGlass(Material.ROCK, "soviet_window_angle", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabOutDeco);
 
 	public static Block lab_tile = new BasicBlock(Material.ROCK, "lab_tile", 2F, 1, SoundType.STONE);
 	public static Block lab_tile2 = new BasicBlock(Material.ROCK, "lab_tile2", 2F, 1, SoundType.STONE);
@@ -216,10 +133,10 @@ public class RegBlocks {
 	public static Block tilled_block_cracked = new BasicBlockSideWithInfo(Material.ROCK, "tilled_block_cracked", 2F, 1, SoundType.STONE);
 	public static Block blue_tilled_block = new BasicBlockSideWithInfo(Material.ROCK, "blue_tilled_block", 2F, 1, SoundType.STONE);
 	public static Block blue_tilled_block_cracked = new BasicBlockSideWithInfo(Material.ROCK, "blue_tilled_block_cracked", 2F, 1, SoundType.STONE);
-	public static Block moss_tilled_block = new BasicBlockSideWithInfo(Material.ROCK, "moss_tilled_block", 2F, 1, SoundType.STONE);
+	public static Block moss_tilled_block = new BasicBlockSideWithInfo(Material.ROCK, "moss_tilled_block", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabOutDeco);
 	public static Block blue_tilled_block_moss = new BasicBlockSideWithInfo(Material.ROCK, "blue_tilled_block_moss", 2F, 1, SoundType.STONE);
 
-	public static Block intro_doors = new IntroDoors(Material.IRON, "introdoors", 5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block intro_doors = new IntroDoors(Material.IRON, "introdoors", 5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 
 	public static Block aquamarine_tile = new BasicBlock(Material.ROCK, "aquamarine_tile", 5F, 1, SoundType.STONE);
 	public static Block aquamarine_tile_cracked = new BasicBlock(Material.ROCK, "aquamarine_tile_cracked", 5F, 1, SoundType.STONE);
@@ -227,7 +144,7 @@ public class RegBlocks {
 	public static Block brown_tile = new BasicBlock(Material.ROCK, "brown_tile", 5F, 1, SoundType.STONE);
 	public static Block brown_tile_crack = new BasicBlock(Material.ROCK, "brown_tile_crack", 5F, 1, SoundType.STONE);
 
-	public static Block autoclave = new Autoclave(Material.IRON, "autoclave", 5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block autoclave = new Autoclave(Material.IRON, "autoclave", 5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block soviet_bed = new SovietBed(Material.IRON, "soviet_bed", 5F, 1, SoundType.METAL);
 
 
@@ -284,13 +201,13 @@ public class RegBlocks {
 
 	public static Block block_moss = new BlockMoss(Material.GRASS, "block_moss", 3F, 1, SoundType.PLANT, SovietCore.tabMain);
 	//container
-	public static Block bedside = new BlockBedside("bedside");
-	public static Block tableside = new BlockTableside("tableside");
-	public static Block soviet_box = new SovietBox("soviet_box");
+	public static Block bedside = new BlockBedside("bedside").setCreativeTab(SovietCore.tabInsDeco);
+	public static Block tableside = new BlockTableside("tableside").setCreativeTab(SovietCore.tabInsDeco);
+	public static Block soviet_box = new SovietBox("soviet_box").setCreativeTab(SovietCore.tabInsDeco);
 
 	public static Block iron_beam = new BasicBlockSideWithCustomModel(Material.IRON, "iron_beam", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
 
-	public static Block soviet_chair = new SovietChair(Material.IRON, "soviet_chair", 4F, 1, SoundType.METAL);
+	public static Block soviet_chair = new SovietChair(Material.IRON, "soviet_chair", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block iron_beam_withbeton = new BasicBlockSideWithCustomModel(Material.IRON, "iron_beam_withbeton", 4F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
 	public static Block iron_beam_vertical = new BasicBlockSideWithCustomModel(Material.IRON, "iron_beam_vertical", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
 
@@ -299,73 +216,74 @@ public class RegBlocks {
 
 	//	public static Block statue_lenin = new BasicBlockSideWithCustomModel(Material.IRON, "statue_lenin", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
 
-	public static Block lab_table_left = new BasicBlockSideWithCustomModel(Material.IRON, "lab_table_left", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block lab_table_right = new BasicBlockSideWithCustomModel(Material.IRON, "lab_table_right", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block lab_table_center = new BasicBlockSideWithCustomModel(Material.IRON, "lab_table_center", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block lab_table_left = new LabTableLeft("lab_table_left").setCreativeTab(SovietCore.tabInsDeco);
+	public static Block lab_table_right = new LabTableRight("lab_table_right").setCreativeTab(SovietCore.tabInsDeco);
+	public static Block lab_table_center = new LabTable("lab_table_center").setCreativeTab(SovietCore.tabInsDeco);
 
-	public static Block electro_board = new BlockElectroBoard(Material.IRON, "electro_board", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block electro_board = new BlockElectroBoard(Material.IRON, "electro_board", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 
 
-	public static Block lab_glass_case = new LabGlassCase(Material.GLASS, "lab_glass_case", 2F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabMain);
+	public static Block lab_glass_case = new LabGlassCase(Material.GLASS, "lab_glass_case", 2F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabInsDeco);
 
-	public static Block dry_cab = new BasicBlockSideWithCustomModel(Material.IRON, "dry_cab", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block comp = new ElectronikaMonitor(Material.IRON, "comp", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block toilet = new BlockToilet(Material.ROCK, "toilet", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block sink = new BlockSink(Material.ROCK, "sink", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block sysblock = new SystemBlock(Material.IRON, "sysblock", 2F, 1, SoundType.METAL);
+	public static Block dry_cab = new DryCab("dry_cab").setCreativeTab(SovietCore.tabInsDeco);
+	public static Block comp = new ElectronikaMonitor(Material.IRON, "comp", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block toilet = new BlockToilet(Material.ROCK, "toilet", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block sink = new BlockSink(Material.ROCK, "sink", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block sysblock = new SystemBlock(Material.IRON, "sysblock", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 	//	public static Block red_wire = new RedWire("red_wire",false).setCreativeTab(SovietCore.tabMain);;
 	//	public static Block red_wire_on = new RedWire("red_wire_on",true);
 
-	public static Block pipe_autoclave = new PipeAutoclave(Material.IRON, "pipe_autoclave", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block mixer = new Mixer(Material.GLASS, "mixer", 1F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabMain);
-	public static Block magnetmixer = new MagnetMixer(Material.IRON, "magnetmixer", 2F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabMain);
-	public static Block alkofire = new DistillApp(Material.GLASS, "alkofire", 1F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabMain);
+	public static Block pipe_autoclave = new PipeAutoclave(Material.IRON, "pipe_autoclave", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block mixer = new Mixer(Material.GLASS, "mixer", 1F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block magnetmixer = new MagnetMixer(Material.IRON, "magnetmixer", 2F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block alkofire = new DistillApp(Material.GLASS, "alkofire", 1F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabInsDeco);
 
-	public static Block biolab_tile = new BiolabTable(Material.ROCK, "biolab_tile", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block biolab_tile_up = new BiolabTableUp(Material.ROCK, "biolab_tile_up", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block biolab_tile = new BiolabTable(Material.ROCK, "biolab_tile", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block biolab_tile_up = new BiolabTableUp(Material.ROCK, "biolab_tile_up", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 
-	public static Block pipes = new BlockPipes(Material.IRON, "pipes", 3F, 1, SoundType.METAL);
-	public static Block pipeangle = new BlockPipes(Material.IRON, "pipeangle", 3F, 1, SoundType.METAL);
+	public static Block pipes = new BlockPipes(Material.IRON, "pipes", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);;
+	public static Block pipeangle = new BlockPipes(Material.IRON, "pipeangle", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);;
 
-	public static Block rubbish = new BlockRubbish(Material.ROCK, "rubbish", 0.5F, 1, SoundType.METAL);
-	public static Block floor_grid = new FloorGrid(Material.IRON, "floor_grid", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block rubbish = new BlockRubbish(Material.ROCK, "rubbish", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block floor_grid = new FloorGrid(Material.IRON, "floor_grid", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 
-	public static Block red_lamp = new RedLamp(Material.GLASS, "red_lamp", 0.5F, 1, SoundType.GLASS, false).setCreativeTab(SovietCore.tabMain);
+	public static Block red_lamp = new RedLamp(Material.GLASS, "red_lamp", 0.5F, 1, SoundType.GLASS, false).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block red_lamp_on = new RedLamp(Material.GLASS, "red_lamp_on", 0.5F, 1, SoundType.GLASS, true);
 
+	//TODO сделать что то
 	public static Block mega_lamp = new MegaLamp(Material.IRON, "mega_lamp", 4F, 1, SoundType.METAL,false);
 	public static Block mega_lamp_true = new MegaLamp(Material.IRON, "mega_lamp_true", 4F, 1, SoundType.METAL,true);
 
-	public static Block lift_down = new BlockLift(Material.WOOD, "lift_down", 0.5F, 1, SoundType.WOOD, false).setCreativeTab(SovietCore.tabMain);
+	public static Block lift_down = new BlockLift(Material.WOOD, "lift_down", 0.5F, 1, SoundType.WOOD, false).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block lift_up = new BlockLift(Material.WOOD, "lift_up", 0.5F, 1, SoundType.WOOD, true);
 
 
-	public static Block steve_helm_s = new SteveHelm(Material.IRON, "steve_helm_s", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block steve_helm = new SteveHelm(Material.IRON, "steve_helm", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block distill_app = new DistillApp(Material.IRON, "distill_app", 4F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabMain);
-	public static Block quartz_tigel = new QuarzTigel(Material.IRON, "quartz_tigel", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block keyboard = new BlockKeyboard(Material.IRON, "keyboard", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block electro_stove = new ElectroStove(Material.IRON, "electro_stove", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block steve_helm_s = new SteveHelm(Material.IRON, "steve_helm_s", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block steve_helm = new SteveHelm(Material.IRON, "steve_helm", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block distill_app = new DistillApp(Material.IRON, "distill_app", 4F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block quartz_tigel = new QuarzTigel(Material.IRON, "quartz_tigel", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block keyboard = new BlockKeyboard(Material.IRON, "keyboard", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block electro_stove = new ElectroStove(Material.IRON, "electro_stove", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 
-	public static Block rasty_rall = new RastyRall(Material.IRON, "rasty_rall", 5F, 1, SoundType.METAL);
+	public static Block rasty_rall = new RastyRall(Material.IRON, "rasty_rall", 5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
 
-	public static Block wood_labshelf_down = new BasicBlockSideWithCustomModel(Material.WOOD, "wood_labshelf_down", 4F, 1, SoundType.WOOD).setCreativeTab(SovietCore.tabMain);
-	public static Block wood_labshelf_down_break = new BasicBlockSideWithCustomModel(Material.WOOD, "wood_labshelf_down_break", 4F, 1, SoundType.WOOD).setCreativeTab(SovietCore.tabMain);
-	public static Block wood_labshelf_upper = new BasicBlockSideWithCustomModel(Material.WOOD, "wood_labshelf_upper", 4F, 1, SoundType.WOOD).setCreativeTab(SovietCore.tabMain);
-	public static Block wood_labshelf_upper_break = new BasicBlockSideWithCustomModel(Material.WOOD, "wood_labshelf_upper_break", 4F, 1, SoundType.WOOD).setCreativeTab(SovietCore.tabMain);
+	public static Block wood_labshelf_down = new WLabTable("wood_labshelf_down").setCreativeTab(SovietCore.tabInsDeco);
+	public static Block wood_labshelf_down_break = new WLabTableBreak("wood_labshelf_down_break").setCreativeTab(SovietCore.tabInsDeco);
+	public static Block wood_labshelf_upper = new BasicBlockSideWithCustomModel(Material.WOOD, "wood_labshelf_upper", 4F, 1, SoundType.WOOD).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block wood_labshelf_upper_break = new BasicBlockSideWithCustomModel(Material.WOOD, "wood_labshelf_upper_break", 4F, 1, SoundType.WOOD).setCreativeTab(SovietCore.tabInsDeco);
 
 //	public static Block BAR = new BlockAnalogRedstone(Material.IRON, "bar", 5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
 
-	public static Block vent_pipe_base = new BasicBlockSideWithCustomModel(Material.IRON, "vent_pipe_base", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block vent_pipe_base = new BasicBlockSideWithCustomModel(Material.IRON, "vent_pipe_base", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 
 
 	//public static Block colba = new BasicBlock(Material.ROCK, "colba", 5F, 1, SoundType.STONE);
-	public static Block soviet_column = new SovietColumn(Material.IRON, "soviet_column", 5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block soviet_column = new SovietColumn(Material.IRON, "soviet_column", 5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
 
 	//public static Block sov_sign = new SovBlockSign("sov_sign").setCreativeTab(SovietCore.tabMain);
 
-	public static Block chem_stuff_1 = new ChemStuff(Material.GLASS, "chem_stuff_1", 0.5F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabMain);
-	public static Block chem_stuff_2 = new ChemStuff(Material.GLASS, "chem_stuff_2", 0.5F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabMain);
+	public static Block chem_stuff_1 = new ChemStuff(Material.GLASS, "chem_stuff_1", 0.5F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block chem_stuff_2 = new ChemStuff(Material.GLASS, "chem_stuff_2", 0.5F, 1, SoundType.GLASS).setCreativeTab(SovietCore.tabInsDeco);
 
 	public static Block small_tiles_red = new BasicBlock(Material.ROCK, "small_tiles_red", 3F, 1, SoundType.STONE);
 	public static Block small_tiles_red_cracked = new BasicBlock(Material.ROCK, "small_tiles_red_cracked", 3F, 1, SoundType.STONE);
@@ -388,51 +306,51 @@ public class RegBlocks {
 	public static Block nii_glass_1 = new BasicTranslucentBlock(Material.GLASS, "nii_glass_1", 2F, 1, SoundType.GLASS);
 	public static Block nii_glass_2 = new BasicTranslucentBlock(Material.GLASS, "nii_glass_2", 2F, 1, SoundType.GLASS);
 	
-	public static Block windproof_beton = new WindProofBeton(Material.ROCK, "windproof_beton", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
+	public static Block windproof_beton = new WindProofBeton(Material.ROCK, "windproof_beton", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabOutDeco);
 
-	public static Block street_light_false = new StreetLight(Material.IRON, "street_light_false", 6F, 1, SoundType.METAL, false).setCreativeTab(SovietCore.tabMain);
+	public static Block street_light_false = new StreetLight(Material.IRON, "street_light_false", 6F, 1, SoundType.METAL, false).setCreativeTab(SovietCore.tabOutDeco);
 	public static Block street_light_true = new StreetLight(Material.IRON, "street_light_true", 6F, 1, SoundType.METAL, true);
 
 	public static Block sl_top_1_on = new StreetLightLampBlock1(Material.IRON, "street_light_top_1_on", 6F, 1, SoundType.METAL, true);
-	public static Block sl_top_1_off = new StreetLightLampBlock1(Material.IRON, "street_light_top_1", 6F, 1, SoundType.METAL, false).setCreativeTab(SovietCore.tabMain);
+	public static Block sl_top_1_off = new StreetLightLampBlock1(Material.IRON, "street_light_top_1", 6F, 1, SoundType.METAL, false).setCreativeTab(SovietCore.tabOutDeco);
 	public static Block sl_top_2_on = new StreetLightLampBlock2(Material.IRON, "street_light_top_2_on", 6F, 1, SoundType.METAL, true);
-	public static Block sl_top_2_off = new StreetLightLampBlock2(Material.IRON, "street_light_top_2", 6F, 1, SoundType.METAL, false).setCreativeTab(SovietCore.tabMain);
+	public static Block sl_top_2_off = new StreetLightLampBlock2(Material.IRON, "street_light_top_2", 6F, 1, SoundType.METAL, false).setCreativeTab(SovietCore.tabOutDeco);
 
 
-	public static Block street_light_down_1 = new StreetLightBlock(Material.IRON, "street_light_down_1", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block street_light_down_2 = new StreetLightBlock(Material.IRON, "street_light_down_2", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block street_light_middle = new StreetLightBlock(Material.IRON, "street_light_middle", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block base_po2 = new BasicBlockSideWithCustomModel(Material.IRON, "base_po2", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block soviet_chair_wood = new SovietChair(Material.WOOD, "soviet_chair_wood", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block street_light_down_1 = new StreetLightBlock(Material.IRON, "street_light_down_1", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block street_light_down_2 = new StreetLightBlock(Material.IRON, "street_light_down_2", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block street_light_middle = new StreetLightBlock(Material.IRON, "street_light_middle", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block base_po2 = new BasicBlockSideWithCustomModel(Material.IRON, "base_po2", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block soviet_chair_wood = new SovietChair(Material.WOOD, "soviet_chair_wood", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 
-	public static Block soviet_tumb = new SovietTumb(Material.WOOD, "soviet_tumb", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block soviet_tumb = new SovietTumb("soviet_tumb").setCreativeTab(SovietCore.tabInsDeco);
 
-	public static Block street_fence = new GofroHandhold(Material.WOOD, "street_fence", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block street_fence_angle = new GofroHandholdAngle(Material.IRON, "street_fence_angle", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block gofro_handhold_angle = new GofroHandholdAngle(Material.IRON, "gofro_handhold_angle", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block street_fence = new GofroHandhold(Material.WOOD, "street_fence", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block street_fence_angle = new GofroHandholdAngle(Material.IRON, "street_fence_angle", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block gofro_handhold_angle = new GofroHandholdAngle(Material.IRON, "gofro_handhold_angle", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
 
-	public static Block vibro_wire = new VibroWire("vibro_wire", 4F);
-	public static Block vibro_wire_b = new VibroWireB("vibro_wire_b", 4F).setCreativeTab(SovietCore.tabMain);
+	public static Block vibro_wire = new VibroWire("vibro_wire", 4F).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block vibro_wire_b = new VibroWireB("vibro_wire_b", 4F).setCreativeTab(SovietCore.tabOutDeco);
 	
-	public static Block contact_wire = new ContactWire("contact_wire", 4F);
-	public static Block contact_wire_base = new ContactWireBase("contact_wire_base", 4F);
-	public static Block contact_wire_angle = new ContactWireAngle(Material.IRON, "contact_wire_angle", 4F, 0, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block contact_wire = new ContactWire("contact_wire", 4F).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block contact_wire_base = new ContactWireBase("contact_wire_base", 4F).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block contact_wire_angle = new ContactWireAngle(Material.IRON, "contact_wire_angle", 4F, 0, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
 
-	public static Block beton_wall = new SlabVertBlock(Material.ROCK, "beton_wall", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block beton_wall = new SlabVertBlock(Material.ROCK, "beton_wall", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
 
-	public static Block bordur = new BordurBlock(Material.ROCK, "bordur", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
-	public static Block road_asphalt = new RoadAsphalt(Material.ROCK, "road_asphalt", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
+	public static Block bordur = new BordurBlock(Material.ROCK, "bordur", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block road_asphalt = new RoadAsphalt(Material.ROCK, "road_asphalt", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabOutDeco);
 
-	public static Block motion_sensor = new MotionSensor(Material.ROCK, "motion_sensor", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabMain);
+	public static Block motion_sensor = new MotionSensor(Material.ROCK, "motion_sensor", 2F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
 	
-	public static Block ug_rail = new UGRail(Material.IRON, "ug_rail", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block ug_rail_rot = new UGRail(Material.IRON, "ug_rail_rot", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block ug_rail_rot2 = new UGRail(Material.IRON, "ug_rail_rot2", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block ug_rail = new UGRail(Material.IRON, "ug_rail", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block ug_rail_rot = new UGRail(Material.IRON, "ug_rail_rot", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block ug_rail_rot2 = new UGRail(Material.IRON, "ug_rail_rot2", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
 	
-	public static Block ug_rail_rot3 = new UGRail(Material.IRON, "ug_rail_rot3", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
-	public static Block ug_rail_rot4 = new UGRail(Material.IRON, "ug_rail_rot4", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block ug_rail_rot3 = new UGRail(Material.IRON, "ug_rail_rot3", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block ug_rail_rot4 = new UGRail(Material.IRON, "ug_rail_rot4", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
 	
-	public static Block ug_rail_diag = new UGRail(Material.IRON, "ug_rail_diag", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block ug_rail_diag = new UGRail(Material.IRON, "ug_rail_diag", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
 	
 	
 	public static Block soviet_bricks_crack = new BasicBlock(Material.ROCK, "soviet_bricks_crack", 5F, 1, SoundType.STONE);
@@ -451,16 +369,16 @@ public class RegBlocks {
 	public static Block yellow_bricks_2_crack = new BasicBlock(Material.ROCK, "ye_bricks_2_crack", 5F, 1, SoundType.STONE);
 	public static Block yellow_bricks_3_crack = new BasicBlock(Material.ROCK, "ye_bricks_3_crack", 5F, 1, SoundType.STONE);
 	
-	public static Block alum_window = new AlumWindow(Material.WOOD, "alum_window", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabMain);
+	public static Block alum_window = new AlumWindow(Material.WOOD, "alum_window", 3F, 0, SoundType.WOOD).setCreativeTab(SovietCore.tabOutDeco);
 	
 	
 	public static Block big_beton_plate = new BasicBlock(Material.ROCK, "big_beton_plate", 5F, 1, SoundType.STONE);
 	
-	public static Block uf_lamp = new UFLamp(Material.IRON, "uf_lamp", 4F, 1, SoundType.METAL,false).setCreativeTab(SovietCore.tabMain);
-	public static Block uf_lamp_break = new UFLampCracked(Material.IRON, "uf_lamp_break", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+	public static Block uf_lamp = new UFLamp(Material.IRON, "uf_lamp", 4F, 1, SoundType.METAL,false).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block uf_lamp_break = new UFLampCracked(Material.IRON, "uf_lamp_break", 4F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block uf_lamp_enb = new UFLamp(Material.IRON, "uf_lamp_enb", 4F, 1, SoundType.METAL,true);
-	
-	public static Block armchair = new BBSWCMSit(Material.WOOD, "armchair", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabMain);
+
+	public static Block armchair = new BBSWCMSit(Material.WOOD, "armchair", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
 	
 	public static Block hermoblock = new BasicBlock(Material.ROCK, "hermoblock", 3F, 1, SoundType.STONE);
 	public static Block parket_left = new BasicBlockSide(Material.ROCK, "parket_left", 3F, 1, SoundType.STONE);
@@ -468,12 +386,69 @@ public class RegBlocks {
 	
 	public static Block parket_line = new BasicBlockSide(Material.ROCK, "parket_line", 3F, 1, SoundType.STONE);
 	
+	public static Block parket_line2 = new BasicBlock(Material.ROCK, "parket_line2", 3F, 1, SoundType.STONE);
+	
+	public static Block rusty_barrel = new BlocksBarrel(Material.ROCK, "rusty_barrel", 3F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	
+	public static Block safe = new BlockSafe("safe").setCreativeTab(SovietCore.tabInsDeco);
+	public static Block stillage = new StillageBlock("stillage").setCreativeTab(SovietCore.tabInsDeco);
+	
 	public static Block nii_wall_1_crack = new BasicBlock(Material.ROCK, "nii_wall_1_crack", 6F, 1, SoundType.STONE);
 	public static Block light_bricks2 = new BasicBlock(Material.ROCK, "light_bricks2", 6F, 1, SoundType.STONE);
 	public static Block light_bricks2_crack = new BasicBlock(Material.ROCK, "light_bricks2_crack", 6F, 1, SoundType.STONE);
+	//physical update
+	public static Block accl_stand = new BasicBlockSideWithCustomModel(Material.IRON, "physical/accl_stand", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block copper_rings = new BasicBlockSideWithCustomModel(Material.IRON, "physical/copper_rings", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block copper_rings_end = new BasicBlockSideWithCustomModel(Material.IRON, "physical/copper_rings_end", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block accl = new Accelerator(Material.IRON, "physical/accl", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block lead_wall = new LeadWall(Material.IRON, "physical/lead_wall", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block thin_lead_wall = new ThinLeadWall(Material.IRON, "physical/thin_lead_wall", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block spec_monitor = new FullFormMonitor(Material.IRON, "physical/spec_monitor", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block ameter = new Apparatus(Material.IRON, "physical/ameter", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block pmeter = new Apparatus(Material.IRON, "physical/pmeter", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block vmeter = new Apparatus(Material.IRON, "physical/vmeter", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block wmeter = new Apparatus(Material.IRON, "physical/wmeter", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block kmeter = new Apparatus(Material.IRON, "physical/kmeter", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block m_meter = new SmallApparatus(Material.IRON, "physical/m_meter", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block em_meter = new SmallApparatus(Material.IRON, "physical/em_meter", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block f_meter = new SmallApparatus(Material.IRON, "physical/f_meter", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block om_meter = new SmallApparatus(Material.IRON, "physical/om_meter", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block accl_tile = new BasicBlock(Material.ROCK, "physical/accl_tile", 6F, 1, SoundType.STONE);
+	public static Block oscilloscope = new Oscilloscope(Material.IRON, "physical/oscilloscope", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block autowriter = new AutoWriter(Material.IRON, "physical/autowriter", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	
+	public static Block accl_lamp_cracked = new AccelLampCracked(Material.IRON, "physical/accl_lamp_cracked", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block accl_lamp = new AccelLamp(Material.IRON, "physical/accl_lamp", 6F, 1, SoundType.STONE, false).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block accl_lamp_true = new AccelLamp(Material.IRON, "physical/accl_lamp_true", 6F, 1, SoundType.STONE, true);
 	public static void register() {
+		//physical update
+		registerBlock(accl_stand);
+		registerBlock(copper_rings);
+		registerBlock(copper_rings_end);
+		registerBlock(accl);
+		registerBlock(lead_wall);
+		registerBlock(thin_lead_wall);
+		registerBlock(spec_monitor);
+		registerBlock(ameter);
+		registerBlock(vmeter);
+		registerBlock(pmeter);
+		registerBlock(m_meter);
+		registerBlock(em_meter);
+		registerBlock(f_meter);
+		registerBlock(wmeter);
+		registerBlock(om_meter);
+		registerBlock(kmeter);
+		registerBlock(accl_lamp);
+		registerBlock(accl_lamp_true);
+		registerBlock(accl_lamp_cracked);
+		registerBlock(oscilloscope);
+		registerBlock(autowriter);
+		registerBlock(accl_tile);
 		
-
+		//older update
+		registerBlock(safe);
+		registerBlock(rusty_barrel);
+		registerBlock(parket_line2);
 		registerBlock(nii_wall_1_crack);
 		registerBlock(parket_line);
 		registerBlock(parket_left);
@@ -572,7 +547,7 @@ public class RegBlocks {
 		registerBlock(wood_labshelf_down_break);
 		registerBlock(wood_labshelf_upper);
 		registerBlock(wood_labshelf_upper_break);
-		registerBlock(swamp_water);
+	//	registerBlock(swamp_water);
 		registerBlock(vent_pipe);
 		registerBlock(hermo_trapdoor);
 		registerBlock(lab_table_right);
@@ -712,10 +687,40 @@ public class RegBlocks {
 		registerBlock(big_beton_plate);
 		registerBlock(light_bricks2);
 		registerBlock(light_bricks2_crack);
-		
+		registerBlock(stillage);
 	}
 
 	public static void registerRender() {
+		
+		//physical update
+		registerRenderBlock(accl_stand);
+		registerRenderBlock(copper_rings);
+		registerRenderBlock(copper_rings_end);
+		registerRenderBlock(accl);
+		registerRenderBlock(lead_wall);
+		registerRenderBlock(thin_lead_wall);
+		registerRenderBlock(spec_monitor);
+		registerRenderBlock(ameter);
+		registerRenderBlock(vmeter);
+		registerRenderBlock(pmeter);
+		registerRenderBlock(m_meter);
+		registerRenderBlock(em_meter);
+		registerRenderBlock(f_meter);
+		registerRenderBlock(accl_lamp);
+		registerRenderBlock(accl_lamp_true);
+		registerRenderBlock(accl_lamp_cracked);
+		registerRenderBlock(wmeter);
+		registerRenderBlock(om_meter);
+		registerRenderBlock(kmeter);
+		registerRenderBlock(oscilloscope);
+		registerRenderBlock(autowriter);
+		registerRenderBlock(accl_tile);
+		
+		//older update
+		registerRenderBlock(stillage);
+		registerRenderBlock(safe);
+		registerRenderBlock(rusty_barrel);
+		registerRenderBlock(parket_line2);
 		registerRenderBlock(light_bricks2);
 		registerRenderBlock(light_bricks2_crack);
 		registerRenderBlock(nii_wall_1_crack);
@@ -827,7 +832,7 @@ public class RegBlocks {
 		registerRenderBlock(intro_doors);
 		registerRenderBlock(inc_lamp_false);
 		registerRenderBlock(inc_lamp_true);
-		registerRenderBlock(swamp_water);
+	//	registerRenderBlock(swamp_water);
 		registerRenderBlock(wood_labshelf_down);
 		registerRenderBlock(wood_labshelf_down_break);
 		registerRenderBlock(wood_labshelf_upper);

@@ -34,7 +34,7 @@ public class RegFluids
     */
    public static void registerRender()
    {
-       modelLoader(RegBlocks.swamp_water, "swamp_water");
+    //   modelLoader(RegBlocks.swamp_water, "swamp_water");
    }
 
    @SideOnly(Side.CLIENT)

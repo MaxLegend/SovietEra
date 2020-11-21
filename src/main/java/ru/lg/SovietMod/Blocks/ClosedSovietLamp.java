@@ -37,7 +37,7 @@ public class ClosedSovietLamp extends BasicBlockSideWithCustomModel {
 		if (isOn)
 		{
 
-			this.setLightLevel(0.95F);
+			this.setLightLevel(0.93F);
 		}
 	}
 
@@ -51,17 +51,17 @@ public class ClosedSovietLamp extends BasicBlockSideWithCustomModel {
 		if (!worldIn.isRemote)
 		{
 
-			if(worldIn.getBlockState(pos) == RegBlocks.sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
+			if(worldIn.getBlockState(pos) == RegBlocks.closed_sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
 				this.isOn = false;
-				worldIn.setBlockState(pos, RegBlocks.sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING)));
+				worldIn.setBlockState(pos, RegBlocks.closed_sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING)));
 				return true;
 
 			}  
 
-			if(worldIn.getBlockState(pos) == RegBlocks.sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
+			if(worldIn.getBlockState(pos) == RegBlocks.closed_sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
 				this.isOn = true;
 
-				worldIn.setBlockState(pos, RegBlocks.sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING)));
+				worldIn.setBlockState(pos, RegBlocks.closed_sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING)));
 
 				return true;
 			}
@@ -92,11 +92,11 @@ public class ClosedSovietLamp extends BasicBlockSideWithCustomModel {
 			} else {
 			if(worldIn.isBlockPowered(pos)) {
 				isOn = true;
-				worldIn.setBlockState(pos, RegBlocks.sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING)));
+				worldIn.setBlockState(pos, RegBlocks.closed_sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING)));
 			}
 			if(!worldIn.isBlockPowered(pos)) {
 				isOn = false;
-				worldIn.setBlockState(pos, RegBlocks.sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING)));
+				worldIn.setBlockState(pos, RegBlocks.closed_sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING)));
 			}
 			}
 		}
@@ -104,13 +104,13 @@ public class ClosedSovietLamp extends BasicBlockSideWithCustomModel {
 	@Override
 	public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)
 	{
-		if(worldIn.getBlockState(pos) == RegBlocks.sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
+		if(worldIn.getBlockState(pos) == RegBlocks.closed_sovietlamp.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
 			this.isOn = false;
 			if(worldIn.isBlockPowered(pos)) {
 				isOn = true;
 			}
 		}
-		if(worldIn.getBlockState(pos) == RegBlocks.sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
+		if(worldIn.getBlockState(pos) == RegBlocks.closed_sovietlamptrue.getDefaultState().withProperty(FACING, state.getValue(FACING))) {
 			this.isOn = true;
 			if(worldIn.isBlockPowered(pos)) {
 				isOn = false;

@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:stillage", "y": 90},
+        "facing=west":  { "model": "soviet:stillage", "y": 270},
+        "facing=south": { "model": "soviet:stillage", "y": 180 },
+        "facing=north": { "model": "soviet:stillage", "y": 0 }
+    }
+}

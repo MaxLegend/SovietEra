@@ -19,7 +19,11 @@ import ru.lg.SovietMod.RegEntity;
 import ru.lg.SovietMod.RegFluids;
 import ru.lg.SovietMod.RegItems;
 import ru.lg.SovietMod.SovietCore;
+import ru.lg.SovietMod.Blocks.DryCab.TileEntityDryCab;
+import ru.lg.SovietMod.Blocks.LabTable.TileEntityLabTable;
 import ru.lg.SovietMod.Blocks.SovietBox.TileEntitySovietBox;
+import ru.lg.SovietMod.Blocks.SovietTumb.TileEntityTumb;
+import ru.lg.SovietMod.Blocks.WoodLabTable.TileEntityWLabTable;
 import ru.lg.SovietMod.Entity.EntityDspPanel1;
 import ru.lg.SovietMod.Entity.EntityRedBanner;
 import ru.lg.SovietMod.Entity.EntitySittableBlock;
@@ -61,6 +65,10 @@ public class CommonProxy {
 		EntityRegistry.registerModEntity(new ResourceLocation(SovietCore.MODID, "dsp_panel_1"), EntityDspPanel1.class, SovietCore.MODID + ":dsp_panel_1", 53, SovietCore.INSTANCE, 64, 20, false);
 	//	GameRegistry.registerTileEntity(TileEntityNumberSign.class, "TileEntityNumberSign");
 		GameRegistry.registerTileEntity(TileEntitySovietBox.class, "TileEntitySovietBox");
+		GameRegistry.registerTileEntity(TileEntityDryCab.class, "TileEntityDryCab");
+		GameRegistry.registerTileEntity(TileEntityTumb.class, "TileEntityTumb");
+		GameRegistry.registerTileEntity(TileEntityLabTable.class, "TileEntityLabTable");
+		GameRegistry.registerTileEntity(TileEntityWLabTable.class, "TileEntityWLabTable");
 //		GameRegistry.registerTileEntity(TileEntityHermoDoor.class, "TileEntityHermoDoor");
 //		GameRegistry.registerTileEntity(TileEntityTrapAnimDoor.class, "TileEntityTrapAnimDoor");
 	//	GameRegistry.registerTileEntity(TileEntitySovSign.class, "TileEntitySovSign");
@@ -70,7 +78,7 @@ public class CommonProxy {
 		EntityRegistry.registerModEntity(new ResourceLocation(SovietCore.MODID, "entitywalltile2"), EntityWallTile2.class, SovietCore.MODID + ":entitywalltile2", 54, SovietCore.INSTANCE, 64, 20, false);
 	}
 	public void init(FMLInitializationEvent event) {
-		RegCrafts.register();
+	//	RegCrafts.register();
 	//	GameRegistry.registerWorldGenerator(wghouse, 0);
 	GameRegistry.registerWorldGenerator(wgl, 1);
 		NetworkRegistry.INSTANCE.registerGuiHandler(SovietCore.INSTANCE, new GuiHandler());

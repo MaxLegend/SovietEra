@@ -40,7 +40,7 @@ public class SovietChair extends BasicBlockWithCustomModel {
 	public SovietChair(Material materialIn, String name, float hardness, float resistanse, SoundType soundtype) {
 		super(materialIn, name, hardness, resistanse, soundtype);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-		this.setCreativeTab(SovietCore.tabMain);
+		
 	}
 
 	@Override

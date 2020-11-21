@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-FMLCorePlugin: name.of.SovietHookLoader
-FMLCorePluginContainsFMLMod: true
-Created-By: 1.7.0 (Oracle Corporation)

@@ -18,6 +18,7 @@ import ru.lg.SovietMod.Blocks.WiresBlock;
 
 public class DrawCollisionBoxAngle {
 
+	//без этого не будет полной красоты. Тут чисто дрочево, надо приноровится рисовать тесселятором. Я эту коробчонку вторую рисовал часа полтора) Ну попробуй.
 	@SubscribeEvent
 	public void drawSelectionBoxHandholdAngle(DrawBlockHighlightEvent e)
 	{

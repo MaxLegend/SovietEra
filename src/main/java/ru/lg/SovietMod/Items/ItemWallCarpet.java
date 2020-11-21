@@ -19,7 +19,7 @@ public class ItemWallCarpet extends Item
 	public ItemWallCarpet(String name, Class <? extends EntityHanging > entityClass)
 	{
 		this.hangingEntityClass = entityClass;
-		this.setCreativeTab(SovietCore.tabMain);
+
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
 	}
