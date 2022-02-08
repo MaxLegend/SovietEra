@@ -1,9 +1,9 @@
 [
 {
   "modid": "soviet",
-  "name": "Soviet Mod",
+  "name": "Soviet Era Mod",
   "description": "...",
-  "version": "${version}",
+  "version": "0.6",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "https://www.curseforge.com/minecraft/mc-mods/soviet-abandoned-lab-mod",

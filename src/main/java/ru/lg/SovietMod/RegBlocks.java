@@ -91,6 +91,7 @@ import ru.lg.SovietMod.Blocks.DecorativeBlocks.ClosedSovietLamp;
 import ru.lg.SovietMod.Blocks.DecorativeBlocks.ContactWire;
 import ru.lg.SovietMod.Blocks.DecorativeBlocks.ContactWireAngle;
 import ru.lg.SovietMod.Blocks.DecorativeBlocks.ContactWireBase;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.DiffLamp;
 import ru.lg.SovietMod.Blocks.DecorativeBlocks.DistillApp;
 import ru.lg.SovietMod.Blocks.DecorativeBlocks.DressRoom;
 import ru.lg.SovietMod.Blocks.DecorativeBlocks.ElectroStove;
@@ -187,6 +188,8 @@ public class RegBlocks {
 	public static Block dress_room_up = new DressRoom(Material.IRON, "bio/dress_room_up", 4F, 1, SoundType.METAL, true);
 	public static Block vent_circle = new VentCircle(Material.IRON, "bio/vent_circle", 1F, 4F, SoundType.WOOD).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block vent_filter = new VentFilter(Material.IRON, "bio/vent_filter", 1F, 4F, SoundType.WOOD).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block diff_lamp = new DiffLamp(Material.WOOD, "bio/diff_lamp", 1F, 4F, SoundType.WOOD, false).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block diff_lamp_true = new DiffLamp(Material.WOOD, "bio/diff_lamp_true", 1F, 4F, SoundType.WOOD, true);
 	
 //	public static Block fantom_block_hermodoor = new FantomBlockHermodoor(Material.IRON, "fantom_block_hermodoor", 6F, 1, SoundType.METAL);
 	
@@ -604,6 +607,8 @@ public class RegBlocks {
 		registerBlock(dress_room_up);
 		registerBlock(vent_circle);
 		registerBlock(vent_filter);
+		registerBlock(diff_lamp);
+		registerBlock(diff_lamp_true);
 
 		//physical update
 		registerBlock(accl_stand);
@@ -905,6 +910,8 @@ public class RegBlocks {
 		registerRenderBlock(dress_room_up);
 		registerRenderBlock(vent_circle);
 		registerRenderBlock(vent_filter);
+		registerRenderBlock(diff_lamp);
+		registerRenderBlock(diff_lamp_true);
 		
 		//physical update
 		registerRenderBlock(accl_stand);
