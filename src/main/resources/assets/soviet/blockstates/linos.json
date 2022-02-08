@@ -1,0 +1,12 @@
+{
+  "variants": {
+	"variant=lino1": { "model": "soviet:lino1" },
+	"variant=lino2": { "model": "soviet:lino2" },
+	"variant=lino3": { "model": "soviet:lino3" },
+	"variant=lino4": { "model": "soviet:lino4" },
+	"variant=lino5": { "model": "soviet:lino5" },
+	"variant=lino6": { "model": "soviet:lino6" },
+	"variant=lino7": { "model": "soviet:lino7" },
+	"variant=lino8": { "model": "soviet:lino8" }
+  }
+}

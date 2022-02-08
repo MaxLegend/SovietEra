@@ -76,13 +76,7 @@ public class ClientProxy extends CommonProxy {
 //                tileEntity.handleEvents(time, pastEvents);
 //            }
 //        });
-//		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityHermoDoor.class, new AnimationTESR<TileEntityHermoDoor>() {
-//            @Override
-//            public void handleEvents(TileEntityHermoDoor tileEntity, float time, Iterable<Event> pastEvents) {
-//                super.handleEvents(tileEntity, time, pastEvents);
-//                tileEntity.handleEvents(time, pastEvents);
-//            }
-//        });
+
 		
 			RenderingRegistry.registerEntityRenderingHandler(EntityDspPanel1.class, new IRenderFactory() {
 				@Override

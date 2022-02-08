@@ -15,25 +15,28 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import ru.lg.SovietMod.Blocks.AccelLamp;
-import ru.lg.SovietMod.Blocks.BasicRotateXZBlock;
-import ru.lg.SovietMod.Blocks.IncLamp;
-import ru.lg.SovietMod.Blocks.RedLamp;
+import ru.lg.SovietMod.Blocks.Basic.BasicRotateXZBlock;
+import ru.lg.SovietMod.Blocks.Basic.NewBasicXZBlock;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.AccelLamp;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.IncLamp;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.RedLamp;
 
-public class AccelLampCracked extends BasicRotateXZBlock {
-
+public class AccelLampCracked extends NewBasicXZBlock {
 
 
 	private static AxisAlignedBB[] SIDE_AABB = new AxisAlignedBB[] {
-			new AxisAlignedBB(0.7D, 1D, 1D, 0.3D, 0.85D, 0D),
-			new AxisAlignedBB(0.7D, 1D, 1D, 0.3D, 0.85D, 0D),
-			new AxisAlignedBB(1D, 1D, 0.7D, 0D, 0.85D, 0.3D),
-			new AxisAlignedBB(1D, 1D, 0.7D, 0D, 0.85D, 0.3D)
-
+			new AxisAlignedBB(1D, 0D, 0.67D, 0D, 0.15D, 0.3D), //upx
+			new AxisAlignedBB(0.7D, 0D, 1D, 0.33D, 0.15D, 0D),//upz
+			new AxisAlignedBB(0.67D, 1D, 1D, 0.3D, 0.85D, 0D),//downz
+			new AxisAlignedBB(1D, 1D, 0.67D, 0D, 0.85D, 0.3D),//downx
+			new AxisAlignedBB(0D, 0.33D, 0D, 1D, 0.7D, 0.15D),//south
+			new AxisAlignedBB(0D, 0.33D, 0.85D, 1D, 0.7D, 1D), //north
+			new AxisAlignedBB(0.85D, 0.33D, 0D, 1D, 0.7D, 1D),//west
+			new AxisAlignedBB(0D, 0.33D, 0D, 0.15D, 0.7D, 1D),//east
 	};
 	public AccelLampCracked(Material materialIn, String name, float hardness, float resistanse, SoundType soundtype) {
 		super(materialIn, name, hardness, resistanse, soundtype);
-		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, BasicRotateXZBlock.EnumOrientation.NORTH));
+		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, NewBasicXZBlock.EnumOrientation.NORTH));
 	
 
 	}
@@ -56,22 +59,22 @@ public class AccelLampCracked extends BasicRotateXZBlock {
 		switch (state.getValue(FACING))
 		{
 		case UP_X:
-			return new AxisAlignedBB(1D, 0D, 0.67D, 0D, 0.15D, 0.3D);
+			return SIDE_AABB[0];
 		case UP_Z:
-			return new AxisAlignedBB(0.7D, 0D, 1D, 0.33D, 0.15D, 0D);
+			return SIDE_AABB[1];
 		case DOWN_Z:
-			return new AxisAlignedBB(0.67D, 1D, 1D, 0.3D, 0.85D, 0D);
+			return SIDE_AABB[2];
 		case DOWN_X:
-			return new AxisAlignedBB(1D, 1D, 0.67D, 0D, 0.85D, 0.3D);
+			return SIDE_AABB[3];
 		case SOUTH:
-			return new AxisAlignedBB(0D, 0.33D, 0D, 1D, 0.7D, 0.15D);
+			return SIDE_AABB[4];
 		case NORTH:
 		default:
-			return new AxisAlignedBB(0D, 0.33D, 0.85D, 1D, 0.7D, 1D);
+			return SIDE_AABB[5];
 		case WEST:
-			return new AxisAlignedBB(0.85D, 0.33D, 0D, 1D, 0.7D, 1D);
+			return SIDE_AABB[6];
 		case EAST:
-			return new AxisAlignedBB(0D, 0.33D, 0D, 0.15D, 0.7D, 1D);
+			return SIDE_AABB[7];
 		}
 	}
 }

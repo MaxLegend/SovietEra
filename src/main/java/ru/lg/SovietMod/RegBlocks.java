@@ -10,7 +10,12 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
-import ru.lg.SovietMod.Blocks.*;
+import ru.lg.SovietMod.Blocks.BlocksLino;
+import ru.lg.SovietMod.Blocks.FantomBlock;
+import ru.lg.SovietMod.Blocks.FantomBlockForPO_2;
+import ru.lg.SovietMod.Blocks.FantomSlabD;
+import ru.lg.SovietMod.Blocks.NIIBlocks;
+import ru.lg.SovietMod.Blocks.PO_2;
 import ru.lg.SovietMod.Blocks.Basic.BBSWCMSit;
 import ru.lg.SovietMod.Blocks.Basic.BasicBlock;
 import ru.lg.SovietMod.Blocks.Basic.BasicBlockNoMIP;
@@ -18,11 +23,122 @@ import ru.lg.SovietMod.Blocks.Basic.BasicBlockSide;
 import ru.lg.SovietMod.Blocks.Basic.BasicBlockSideCustomModelWithGlass;
 import ru.lg.SovietMod.Blocks.Basic.BasicBlockSideWithCustomModel;
 import ru.lg.SovietMod.Blocks.Basic.BasicBlockSideWithInfo;
+import ru.lg.SovietMod.Blocks.Basic.BasicBlockTable;
 import ru.lg.SovietMod.Blocks.Basic.BasicItemBlock;
+import ru.lg.SovietMod.Blocks.Basic.BasicRotateXZFBlock;
+import ru.lg.SovietMod.Blocks.Basic.BasicTranslucentBlock;
+import ru.lg.SovietMod.Blocks.Basic.BasicTumbler;
+import ru.lg.SovietMod.Blocks.Basic.BasicTumblerBlock;
 import ru.lg.SovietMod.Blocks.Bedside.BlockBedside;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.BlockBeton;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.BlockBetonRalling;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.BlockKafel;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.ChainBlock;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.HermoTrapdoor;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.Hermodoor;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.IntroDoors;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.LeadWall;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.PanelBlockRotate;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.RastyHandhold;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.RastyHandholdAngle;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.RastyRailing;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.RastyRall;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.RoadAsphalt;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.SlabVertBlock;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.SovietColumn;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.SovietLadder;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.SovietStairs;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.SovietWindow;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.SovietWindowLeaf;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.VibroWire;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.VibroWireB;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.VibroWireLever;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.WindProofBeton;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.WiresBlock;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.Doors.AirlockDoor;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.Doors.AluminiumDoor;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.Doors.RallingDoor;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.Doors.RustyIronDoor;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.Doors.SovietDoorWood;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.Doors.SovietDoorWoodInto;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.Windows.AlumWindow;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.Windows.FactoryWindow;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.Windows.ModernWindow;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.Windows.ModernWindowLeaf;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.AccelLamp;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.Accelerator;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.Apparatus;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.AutoWriter;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.Autoclave;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BarbWire;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.Beton_Block;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BioStillage;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BiolabTable;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BiolabTableUp;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BlockBattery;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BlockElectroBoard;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BlockKeyboard;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BlockLift;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BlockMoss;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BlockPipes;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BlockRubbish;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BlockSink;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BlockToilet;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BlocksBarrel;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BordurBlock;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.ChemStuff;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.ClosedSovietLamp;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.ContactWire;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.ContactWireAngle;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.ContactWireBase;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.DistillApp;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.DressRoom;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.ElectroStove;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.ElectronikaMonitor;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.FloorGrid;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.FullFormMonitor;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.GlassTube;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.GofroHandhold;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.GofroHandholdAngle;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.IncLamp;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.LabGlassCase;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.MagnetMixer;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.MegaLamp;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.Mixer;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.MotionSensor;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.Oscilloscope;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.PipeAutoclave;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.QuarzTigel;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.RadiatorBlock;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.RedLamp;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.SmallApparatus;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.SovietBed;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.SovietChair;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.SovietLamp;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.SovietLampCracked;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.SovietRelay;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.SovietTable;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.SteveHelm;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.StreetLight;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.StreetLightBlock;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.StreetLightLampBlock1;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.StreetLightLampBlock2;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.SystemBlock;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.ThinLeadWall;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.ThinTubeBattery;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.TurnStileOff;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.TurnStileOn;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.UFLamp;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.UFLampCracked;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.UGRail;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.VentCircle;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.VentFilter;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.VentPipe;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.VentPipe2;
 import ru.lg.SovietMod.Blocks.DryCab.DryCab;
 import ru.lg.SovietMod.Blocks.ItemBlocks.ItemBlockBeton;
 import ru.lg.SovietMod.Blocks.ItemBlocks.ItemBlockKafel;
+import ru.lg.SovietMod.Blocks.ItemBlocks.ItemBlockLino;
 import ru.lg.SovietMod.Blocks.ItemBlocks.ItemBlockNIIBlocks;
 import ru.lg.SovietMod.Blocks.LabTable.LabTable;
 import ru.lg.SovietMod.Blocks.LabTable.LabTableLeft;
@@ -45,6 +161,38 @@ public class RegBlocks {
 
 	//public static Block swamp_water = new SwampWaterBlock(RegFluids.swamp_water, "swamp_water");
 	
+	//public static Block bighermodoor = new Hermodoor2(Material.IRON, "hermo_door", 0, 0, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);;
+	
+	//bio update
+	public static Block vent_pipe2 = new VentPipe2(Material.IRON, "bio/vent_pipe2", 1F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block vent_pipe2_base = new BasicBlock(Material.IRON, "bio/vent_pipe2_base", 1F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabOutDeco);
+	public static Block bio_stillage = new BioStillage(Material.IRON, "bio/bio_stil", 1F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block cryocapsule = new BasicBlockSideWithCustomModel(Material.IRON, "bio/cryocapsule", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block rotamixer = new BasicBlockSideWithCustomModel(Material.IRON, "bio/rotamixer", 3F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block horiz_tile_blue = new BasicBlock(Material.ROCK, "bio/horiz_tile_blue", 2F, 1, SoundType.STONE);
+	public static Block horiz_tile_blue_crack = new BasicBlock(Material.ROCK, "bio/horiz_tile_blue_crack", 2F, 1, SoundType.STONE);
+	public static Block horiz_tile_white = new BasicBlock(Material.ROCK, "bio/horiz_tile_white", 2F, 1, SoundType.STONE);
+	public static Block lab_sink = new BasicBlockSideWithCustomModel(Material.IRON, "bio/lab_sink", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block biolab_table2 = new BasicBlockTable(Material.IRON, "bio/biolab_table2", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block biolab_table3 = new BasicBlockTable(Material.IRON, "bio/biolab_table3", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block biolab_table4 = new BasicBlockTable(Material.IRON, "bio/biolab_table4", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block biolab_chair = new BBSWCMSit(Material.WOOD, "bio/biolab_chair", 6F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block brown_tilled_block = new BasicBlock(Material.ROCK, "brown_tilled_block", 5F, 1, SoundType.STONE);
+	public static Block biolab_tumbler = new BasicTumbler(Material.IRON, "bio/biolab_tumbler", 1F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block biolab_power_socket = new BasicTumblerBlock(Material.IRON, "bio/biolab_power_socket", 1F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block radiator = new RadiatorBlock(Material.IRON, "bio/radiator", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block autoclave2 = new BasicBlockSideWithCustomModel(Material.IRON, "bio/autoclave2", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block chain = new ChainBlock(Material.IRON, "bio/chain", 0.5F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block dress_room_down = new DressRoom(Material.IRON, "bio/dress_room_down", 4F, 1, SoundType.METAL, false).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block dress_room_up = new DressRoom(Material.IRON, "bio/dress_room_up", 4F, 1, SoundType.METAL, true);
+	public static Block vent_circle = new VentCircle(Material.IRON, "bio/vent_circle", 1F, 4F, SoundType.WOOD).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block vent_filter = new VentFilter(Material.IRON, "bio/vent_filter", 1F, 4F, SoundType.WOOD).setCreativeTab(SovietCore.tabInsDeco);
+	
+//	public static Block fantom_block_hermodoor = new FantomBlockHermodoor(Material.IRON, "fantom_block_hermodoor", 6F, 1, SoundType.METAL);
+	
+	//-----------------
+	public static Block fantom_block = new FantomBlockForPO_2(Material.ROCK, "fantom_block", 6F, 1, SoundType.STONE);
+	public static Block fantom_block2 = new FantomBlock(Material.ROCK, "fantom_block2", 6F, 1, SoundType.STONE);
 	public static Block inc_lamp_false = new IncLamp(Material.GLASS, "inc_lamp_false", 0.5F, 1, SoundType.GLASS, false).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block inc_lamp_true = new IncLamp(Material.GLASS, "inc_lamp_true", 0.5F, 1, SoundType.GLASS, true);
 
@@ -84,10 +232,8 @@ public class RegBlocks {
 
 	public static Block vent_pipe = new VentPipe("vent_pipe", 1F).setCreativeTab(SovietCore.tabOutDeco);
 	public static Block barb_wire = new BarbWire("barb_wire", 2F).setCreativeTab(SovietCore.tabOutDeco);
+	
 
-
-	public static Block fantom_block = new FantomBlockForPO_2(Material.ROCK, "fantom_block", 6F, 1, SoundType.STONE);
-	public static Block fantom_block2 = new FantomBlock(Material.ROCK, "fantom_block2", 6F, 1, SoundType.STONE);
 
 	//	public static Block fantom_block4 = new FantomSideBlock2(Material.IRON, "fantom_block4", 6F, 1, SoundType.METAL);
 	//	public static Block fantom_block5 = new FantomSideBlock3(Material.IRON, "fantom_block5", 6F, 1, SoundType.METAL);
@@ -171,6 +317,7 @@ public class RegBlocks {
 	//Meta blocks ----------------------------------------------------------------------------------------------------------
 	public static Block betons = new BlockBeton("betons", 6F, 1, SoundType.STONE);
 	public static Block kafels = new BlockKafel("kafels", 6F, 1, SoundType.STONE);
+	public static Block linos = new BlocksLino("linos", 6F, 1, SoundType.STONE);
 	public static Block nii_blocks = new NIIBlocks("nii_blocks", 4F, 1, SoundType.STONE);
 
 
@@ -295,9 +442,9 @@ public class RegBlocks {
 	public static Block small_tiles_cracked = new BasicBlock(Material.ROCK, "small_tiles_cracked", 3F, 1, SoundType.STONE);
 	public static Block small_tiles_blue_cracked = new BasicBlock(Material.ROCK, "small_tiles_blue_cracked", 3F, 1, SoundType.STONE);
 
-	public static Block lino1 = new BasicBlock(Material.CACTUS, "lino1", 2F, 1, SoundType.CLOTH);
-	public static Block lino2 = new BasicBlock(Material.CACTUS, "lino2", 2F, 1, SoundType.CLOTH);
-	public static Block lino3 = new BasicBlock(Material.CACTUS, "lino3", 2F, 1, SoundType.CLOTH);
+	//public static Block lino1 = new BasicBlock(Material.CACTUS, "lino1", 2F, 1, SoundType.CLOTH);
+	//public static Block lino2 = new BasicBlock(Material.CACTUS, "lino2", 2F, 1, SoundType.CLOTH);
+	//public static Block lino3 = new BasicBlock(Material.CACTUS, "lino3", 2F, 1, SoundType.CLOTH);
 	
 	public static Block light_bricks = new BasicBlock(Material.ROCK, "light_bricks", 2F, 1, SoundType.STONE);
 	public static Block light_bricks_crack = new BasicBlock(Material.ROCK, "light_bricks_crack", 2F, 1, SoundType.STONE);
@@ -420,7 +567,44 @@ public class RegBlocks {
 	public static Block accl_lamp_cracked = new AccelLampCracked(Material.IRON, "physical/accl_lamp_cracked", 6F, 1, SoundType.STONE).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block accl_lamp = new AccelLamp(Material.IRON, "physical/accl_lamp", 6F, 1, SoundType.STONE, false).setCreativeTab(SovietCore.tabInsDeco);
 	public static Block accl_lamp_true = new AccelLamp(Material.IRON, "physical/accl_lamp_true", 6F, 1, SoundType.STONE, true);
+	
+	//small deco update
+	public static Block short_bricks = new BasicBlock(Material.ROCK, "req/short_bricks", 2F, 1, SoundType.STONE);
+	public static Block tubing = new BasicRotateXZFBlock(Material.IRON, "req/tubing", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	public static Block v_tubing = new BasicRotateXZFBlock(Material.IRON, "req/v_tubing", 2F, 1, SoundType.METAL).setCreativeTab(SovietCore.tabInsDeco);
+	
+
 	public static void register() {
+	//	registerBlock(fantom_block_hermodoor);
+	//	registerBlock(bighermodoor);
+		//bio update
+		registerBlock(vent_pipe2_base);
+		registerBlock(vent_pipe2);
+		registerBlock(short_bricks);
+		registerBlock(tubing);
+		registerBlock(v_tubing);
+		registerBlock(bio_stillage);
+		registerBlock(cryocapsule);
+		registerBlock(rotamixer);
+		registerBlock(horiz_tile_blue);
+		registerBlock(horiz_tile_blue_crack);
+		registerBlock(horiz_tile_white);
+		registerBlock(lab_sink);
+		registerBlock(biolab_table2);
+		registerBlock(biolab_table3);
+		registerBlock(biolab_table4);
+		registerBlock(biolab_chair);
+		registerBlock(brown_tilled_block);
+		registerBlock(biolab_tumbler);
+		registerBlock(biolab_power_socket);
+		registerBlock(radiator);
+		registerBlock(autoclave2);
+		registerBlock(chain);
+		registerBlock(dress_room_down);
+		registerBlock(dress_room_up);
+		registerBlock(vent_circle);
+		registerBlock(vent_filter);
+
 		//physical update
 		registerBlock(accl_stand);
 		registerBlock(copper_rings);
@@ -602,7 +786,7 @@ public class RegBlocks {
 		registerIBlock("glazed_tile_black_cracked_color", "glazed_tile_black_cracked_type", glazed_tile_black_cracked);
 		registerBlock(toilet);
 		registerBlock(sink);
-		registerBlock(lino2);
+	//	registerBlock(lino2);
 		registerBlock(lab_glass_case);
 		registerBlock(wires);
 		registerBlock(glass_tube);
@@ -634,7 +818,7 @@ public class RegBlocks {
 		registerBlock(beton_with_ralling);
 		registerBlock(soviet_bricks_with_white);
 		registerBlock(green_beton_with_ralling);
-		registerBlock(lino3);
+	//	registerBlock(lino3);
 		registerBlock(soviet_ladder);
 		registerBlock(panel_block_rot);
 
@@ -656,7 +840,7 @@ public class RegBlocks {
 		registerBlock(green_bricks);
 		registerBlock(rusty_ralling);
 		registerBlock(soviet_window_leaf);
-		registerBlock(lino1);
+	//	registerBlock(lino1);
 
 		registerBlock(soviet_selector);
 		registerBlock(soviet_table);
@@ -673,6 +857,7 @@ public class RegBlocks {
 		registerBlockMeta(betons, new ItemBlockBeton(betons));
 		registerBlockMeta(kafels, new ItemBlockKafel(kafels));
 		registerBlockMeta(nii_blocks, new ItemBlockNIIBlocks(nii_blocks));
+		registerBlockMeta(linos, new ItemBlockLino(linos));
 
 		registerBlock(asphalt);
 		registerBlock(road_asphalt);
@@ -691,6 +876,35 @@ public class RegBlocks {
 	}
 
 	public static void registerRender() {
+	//	registerRenderBlock(fantom_block_hermodoor);
+	//	registerRenderBlock(bighermodoor);
+		//bio update
+		registerRenderBlock(short_bricks);
+		registerRenderBlock(vent_pipe2);
+		registerRenderBlock(vent_pipe2_base);
+		registerRenderBlock(tubing);
+		registerRenderBlock(v_tubing);
+		registerRenderBlock(bio_stillage);
+		registerRenderBlock(cryocapsule);
+		registerRenderBlock(rotamixer);
+		registerRenderBlock(horiz_tile_blue);
+		registerRenderBlock(horiz_tile_blue_crack);
+		registerRenderBlock(horiz_tile_white);
+		registerRenderBlock(lab_sink);
+		registerRenderBlock(biolab_table2);
+		registerRenderBlock(biolab_table3);
+		registerRenderBlock(biolab_table4);
+		registerRenderBlock(biolab_chair);
+		registerRenderBlock(brown_tilled_block);
+		registerRenderBlock(biolab_tumbler);
+		registerRenderBlock(biolab_power_socket);
+		registerRenderBlock(radiator);
+		registerRenderBlock(autoclave2);
+		registerRenderBlock(chain);
+		registerRenderBlock(dress_room_down);
+		registerRenderBlock(dress_room_up);
+		registerRenderBlock(vent_circle);
+		registerRenderBlock(vent_filter);
 		
 		//physical update
 		registerRenderBlock(accl_stand);
@@ -794,7 +1008,7 @@ public class RegBlocks {
 		registerRenderBlock(soviet_bed);
 		registerRenderBlock(vibro_wire);
 		registerRenderBlock(beton_wall);
-		registerRenderBlock(lino1);
+	//	registerRenderBlock(lino1);
 		registerRenderBlock(soviet_chair_wood);
 		registerRenderBlock(base_po2);
 		registerRenderBlock(vibro_wire_b);
@@ -859,8 +1073,8 @@ public class RegBlocks {
 		registerRenderBlock(po_2_up);
 		registerRenderBlock(rasty_rall);
 		registerRenderBlock(electro_stove);
-		registerRenderBlock(lino2);
-		registerRenderBlock(lino3);
+	//	registerRenderBlock(lino2);
+	//	registerRenderBlock(lino3);
 		registerRenderBlock(distill_app);
 		registerRenderBlock(quartz_tigel);
 		registerRenderBlock(keyboard);

@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:bio/dress_room_up", "y": 270},
+        "facing=west":  { "model": "soviet:bio/dress_room_up", "y": 90},
+        "facing=south": { "model": "soviet:bio/dress_room_up", "y": 0 },
+        "facing=north": { "model": "soviet:bio/dress_room_up", "y": 180 }
+    }
+}

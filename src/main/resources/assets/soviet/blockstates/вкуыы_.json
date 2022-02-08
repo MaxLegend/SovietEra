@@ -1,0 +1,10 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:barrier_down", "y": 90},
+        "facing=west":  { "model": "soviet:barrier_down", "y": 270},
+        "facing=south": { "model": "soviet:barrier_down", "y": 180 },
+        "facing=north": { "model": "soviet:barrier_down", "y": 0 }
+    }
+}
+

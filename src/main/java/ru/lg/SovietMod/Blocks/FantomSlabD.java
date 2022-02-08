@@ -12,6 +12,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import ru.lg.SovietMod.RegBlocks;
 import ru.lg.SovietMod.Blocks.Basic.BasicBlock;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.LabGlassCase;
 
 public class FantomSlabD extends BasicBlock {
 

@@ -11,6 +11,10 @@
 "variant=beige_beton_crack": { "model": "soviet:beige_beton_crack" },
  "variant=beige_beton": { "model": "soviet:beige_beton" },
 "variant=beige_beton2_crack": { "model": "soviet:beige_beton2_crack" },
- "variant=beige_beton2": { "model": "soviet:beige_beton2" }
+ "variant=beige_beton2": { "model": "soviet:beige_beton2" },
+"variant=red_beton_crack": { "model": "soviet:red_beton_crack" },
+ "variant=red_beton": { "model": "soviet:red_beton" },
+"variant=yellow_beton_crack": { "model": "soviet:yellow_beton_crack" },
+ "variant=yellow_beton": { "model": "soviet:yellow_beton" }
   }
 }

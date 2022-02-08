@@ -5,8 +5,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemMultiTexture;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
-import ru.lg.SovietMod.Blocks.BlockBeton.EnumType;
 import ru.lg.SovietMod.Blocks.NIIBlocks;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.BlockBeton.EnumType;
 
 public class ItemBlockNIIBlocks extends ItemMultiTexture{
 

@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "axis=z,def=true,down=false,middle=false,up=false":  { "model": "soviet:bio/bio_stillage_def"},
+	"axis=x,def=true,down=false,middle=false,up=false":  { "model": "soviet:bio/bio_stillage_def", "y": 90},
+        "axis=z,def=false,down=true,middle=false,up=false":  { "model": "soviet:bio/bio_stillage_down"},
+	"axis=x,def=false,down=true,middle=false,up=false":  { "model": "soviet:bio/bio_stillage_down", "y": 90},
+ 	"axis=z,def=false,down=false,middle=true,up=false":  { "model": "soviet:bio/bio_stillage_middle"},
+	"axis=x,def=false,down=false,middle=true,up=false":  { "model": "soviet:bio/bio_stillage_middle", "y": 90},
+ 	"axis=z,def=false,down=false,middle=false,up=true":  { "model": "soviet:bio/bio_stillage_up"},
+	"axis=x,def=false,down=false,middle=false,up=true":  { "model": "soviet:bio/bio_stillage_up", "y": 90}
+    }
+}

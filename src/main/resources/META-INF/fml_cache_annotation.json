@@ -1,0 +1,39 @@
+{
+  "com/elytradev/mini/MiniCoremod": {
+    "name": "com/elytradev/mini/MiniCoremod",
+    "interfaces": [
+      "net/minecraftforge/fml/relauncher/IFMLLoadingPlugin"
+    ]
+  },
+  "com/elytradev/mini/MiniTransformer": {
+    "name": "com/elytradev/mini/MiniTransformer",
+    "interfaces": [
+      "net/minecraft/launchwrapper/IClassTransformer",
+      "org/objectweb/asm/Opcodes"
+    ]
+  },
+  "com/elytradev/mini/annotation/Patch$Class": {
+    "name": "com/elytradev/mini/annotation/Patch$Class",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "com/elytradev/mini/annotation/Patch$Classes": {
+    "name": "com/elytradev/mini/annotation/Patch$Classes",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "com/elytradev/mini/annotation/Patch$Method": {
+    "name": "com/elytradev/mini/annotation/Patch$Method",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "com/elytradev/mini/annotation/Patch$Methods": {
+    "name": "com/elytradev/mini/annotation/Patch$Methods",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  }
+}

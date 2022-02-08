@@ -13,8 +13,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.client.event.DrawBlockHighlightEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import ru.lg.SovietMod.RegBlocks;
-import ru.lg.SovietMod.Blocks.RastyHandholdAngle;
-import ru.lg.SovietMod.Blocks.WiresBlock;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.RastyHandholdAngle;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.WiresBlock;
 
 public class DrawCollisionBoxAngle {
 

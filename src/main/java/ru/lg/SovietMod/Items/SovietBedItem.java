@@ -16,7 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import ru.lg.SovietMod.RegBlocks;
-import ru.lg.SovietMod.Blocks.SovietBed;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.SovietBed;
 
 public class SovietBedItem extends BasicItem {
 	public SovietBedItem(String name, int maxStackSize, CreativeTabs tab) {

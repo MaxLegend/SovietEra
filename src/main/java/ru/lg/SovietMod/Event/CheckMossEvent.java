@@ -6,7 +6,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import ru.lg.SovietMod.RegBlocks;
-import ru.lg.SovietMod.Blocks.BlockMoss;
+import ru.lg.SovietMod.Blocks.DecorativeBlocks.BlockMoss;
 
 public class CheckMossEvent {
 	@SubscribeEvent

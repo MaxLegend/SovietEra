@@ -11,10 +11,10 @@ import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import ru.lg.SovietMod.RegBlocks;
 import ru.lg.SovietMod.RegItems;
-import ru.lg.SovietMod.Blocks.BlockBeton;
-import ru.lg.SovietMod.Blocks.BlockKafel;
-import ru.lg.SovietMod.Blocks.SovietWindow;
-import ru.lg.SovietMod.Blocks.SovietWindowLeaf;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.BlockBeton;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.BlockKafel;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.SovietWindow;
+import ru.lg.SovietMod.Blocks.BuildingBlocks.SovietWindowLeaf;
 
 public class HammerEvent {
 	@SubscribeEvent

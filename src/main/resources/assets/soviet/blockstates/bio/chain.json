@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "down=true,up=true":  { "model": "soviet:bio/chain_d"},
+        "down=true,up=false":  { "model": "soviet:bio/chain_down"},
+       "down=false,up=true":  { "model": "soviet:bio/chain_up"},
+ "down=false,up=false":  { "model": "soviet:bio/chain_mid"}
+    }
+}

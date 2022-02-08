@@ -1,0 +1,10 @@
+{
+    "variants": {
+	"facing=west":  { "model": "soviet:bio/vent_circle", "x": 90, "y": 90},
+ 	"facing=up":  { "model": "soviet:bio/vent_circle", "x": 180},
+        "facing=east":  { "model": "soviet:bio/vent_circle", "x": 90, "y": 270},
+        "facing=down":  { "model": "soviet:bio/vent_circle", "y": 270},
+        "facing=south": { "model": "soviet:bio/vent_circle", "y": 0, "x": 90 },
+        "facing=north": { "model": "soviet:bio/vent_circle", "y": 0, "x": 270  }
+    }
+}

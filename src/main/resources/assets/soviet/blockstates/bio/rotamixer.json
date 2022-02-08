@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:bio/rotamixer", "y": 270},
+        "facing=west":  { "model": "soviet:bio/rotamixer", "y": 90},
+        "facing=south": { "model": "soviet:bio/rotamixer", "y": 0 },
+        "facing=north": { "model": "soviet:bio/rotamixer", "y": 180 }
+    }
+}

@@ -14,7 +14,6 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import ru.lg.SovietMod.RegBlocks;
 import ru.lg.SovietMod.RegConfig;
-import ru.lg.SovietMod.RegCrafts;
 import ru.lg.SovietMod.RegEntity;
 import ru.lg.SovietMod.RegFluids;
 import ru.lg.SovietMod.RegItems;
@@ -63,7 +62,7 @@ public class CommonProxy {
 		EntityRegistry.registerModEntity(new ResourceLocation(SovietCore.MODID, "entitywallpaper4"), EntityWallpaper4.class, SovietCore.MODID + ":entitywallpaper4", 51, SovietCore.INSTANCE, 64, 20, false);
 		EntityRegistry.registerModEntity(new ResourceLocation(SovietCore.MODID, "entitywallpaper5"), EntityWallpaper5.class, SovietCore.MODID + ":entitywallpaper5", 52, SovietCore.INSTANCE, 64, 20, false);
 		EntityRegistry.registerModEntity(new ResourceLocation(SovietCore.MODID, "dsp_panel_1"), EntityDspPanel1.class, SovietCore.MODID + ":dsp_panel_1", 53, SovietCore.INSTANCE, 64, 20, false);
-	//	GameRegistry.registerTileEntity(TileEntityNumberSign.class, "TileEntityNumberSign");
+	//	GameRegistry.registerTileEntity(TileHermodoor.class, "TileHermodoor");
 		GameRegistry.registerTileEntity(TileEntitySovietBox.class, "TileEntitySovietBox");
 		GameRegistry.registerTileEntity(TileEntityDryCab.class, "TileEntityDryCab");
 		GameRegistry.registerTileEntity(TileEntityTumb.class, "TileEntityTumb");

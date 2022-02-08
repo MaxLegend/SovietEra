@@ -51,7 +51,7 @@ public class WorldGenLab  implements IWorldGenerator {
 			if (world.getWorldInfo().getTerrainType() != WorldType.FLAT) {
 				if(trrand.nextInt(RegConfig.chanceGeneration1) == 1 && trrand.nextInt(RegConfig.chanceGeneration2) == 3) {
 
-					generateLab(world, random, chunkX, chunkZ);
+			//	generateLab(world, random, chunkX, chunkZ);
 				}
 			}
 		} else if(!RegConfig.enableLabGenerator) {

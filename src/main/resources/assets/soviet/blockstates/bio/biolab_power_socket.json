@@ -1,0 +1,9 @@
+
+{
+    "variants": {
+        "facing=east":  { "model": "soviet:bio/power_socket", "y": 270},
+        "facing=west":  { "model": "soviet:bio/power_socket", "y": 90},
+        "facing=south": { "model": "soviet:bio/power_socket", "y": 0 },
+        "facing=north": { "model": "soviet:bio/power_socket", "y": 180 }
+    }
+}

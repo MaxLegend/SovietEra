@@ -1,8 +1,8 @@
 {
     "parent": "block/stairs",
     "textures": {
-        "bottom": "soviet:blocks/beton",
-        "top": "soviet:blocks/beton",
-        "side": "soviet:blocks/beton"
+        "bottom": "soviet:blocks/beton2",
+        "top": "soviet:blocks/beton2",
+        "side": "soviet:blocks/beton2"
     }
 }

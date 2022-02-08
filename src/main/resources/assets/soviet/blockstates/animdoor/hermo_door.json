@@ -1,0 +1,31 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "soviet:hermo_frame"
+    },
+    "variants": {
+        "normal": [{}],
+        "inventory": [{
+            "model": "soviet:hermo_full",
+            "submodel": {
+                "door": {
+                    "model": "soviet:hermo_frame"
+                }
+            }
+        }],
+        "facing": {
+            "north": { "transform": "identity"                   },
+            "south": { "transform": { "rotation": { "y": 180 } } },
+            "east":  { "transform": { "rotation": { "y": 270 } } },
+            "west":  { "transform": { "rotation": { "y": 90  } } }
+        },
+        "static": {
+            "true": {
+                "model": "soviet:hermo_frame"
+            },
+            "false": {
+                "model": "soviet:hermo_door"
+            }
+        }
+    }
+}

@@ -15,6 +15,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 /**
  * Basics API class by Log( Rotate X:Y:Z ) Block
@@ -35,7 +36,7 @@ public class BasicLogBlock extends BlockRotatedPillar {
 		this.setDefaultState(this.blockState.getBaseState().withProperty(AXIS, EnumFacing.Axis.Y));
 	
 	}
-	
+
 	public static enum EnumAxis implements IStringSerializable {
 		X("x"),
 		Y("y"),
